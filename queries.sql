@@ -9,11 +9,11 @@ age int not null
 );
 insert into student value(1,'shubham',20);
 insert into student value(2,'shubh',24);
--- drop table student;
--- select * from student;
--- show databases;
--- show tables;
--- drop table student;
+drop table student;
+select * from student;
+show databases;
+show tables;
+drop table student;
 
 -- create table student(
 -- id int primary key,
