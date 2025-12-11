@@ -2,11 +2,11 @@
 create database collage;
 -if exist    -- if not exist-- 
 use collage;
--- create table student(
--- id int primary key,
--- name varchar(40),
--- age int not null
--- );
+create table student(
+id int primary key,
+name varchar(40),
+age int not null
+);
 -- insert into student value(1,'shubham',20);
 -- insert into student value(2,'shubh',24);
 -- drop table student;
