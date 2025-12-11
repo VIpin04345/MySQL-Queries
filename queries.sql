@@ -93,98 +93,98 @@ drop table student;
 -- select marks from student;
 -- drop database collage;
 
-create database collage;
-use collage;
-create table student(
-id int primary key,
-name varchar(50),
-marks int not null,
-grade varchar(1),
-city varchar(20)
-);
+-- create database collage;
+-- use collage;
+-- create table student(
+-- id int primary key,
+-- name varchar(50),
+-- marks int not null,
+-- grade varchar(1),
+-- city varchar(20)
+-- );
 
-insert into student
-(id,name,marks,grade,city)
-values
-(101,'anil',78,'c','pune'),
-(102,'bhumika',93,'a','mumbai'),
-(103,'chetan',85,'b','mumbai'),
-(104,'dhruv',96,'a','delhi'),
-(105,'emanuel',12,'f','delhi'),
-(106,'farah',82,'b','delhi');
-insert into student value(107,'dinesh',92,'a','noida');
-select * from student;
-select id from student;
-select name from student;
-select marks from student;
-select grade from student;
-select city from student;
-
-
-select distinct marks from student;
-select distinct grade from student;
-select distinct city from student;
-
--- where clauses-- 
-
-select * from student where marks>80;
-select * from student where city='mumbai';
-select * from student where marks>80 and city ='mumbai';
-select * from student where marks+10 >100;
+-- insert into student
+-- (id,name,marks,grade,city)
+-- values
+-- (101,'anil',78,'c','pune'),
+-- (102,'bhumika',93,'a','mumbai'),
+-- (103,'chetan',85,'b','mumbai'),
+-- (104,'dhruv',96,'a','delhi'),
+-- (105,'emanuel',12,'f','delhi'),
+-- (106,'farah',82,'b','delhi');
+-- insert into student value(107,'dinesh',92,'a','noida');
+-- select * from student;
+-- select id from student;
+-- select name from student;
+-- select marks from student;
+-- select grade from student;
+-- select city from student;
 
 
-select * from student where marks >80 or city = 'delhi';
-select * from student where city='delhi' and grade='b';
-select * from student where marks between 70 and 90;
-select * from student where city in('delhi','noida');
-select * from student where city not in ('delhi','noida');
+-- select distinct marks from student;
+-- select distinct grade from student;
+-- select distinct city from student;
 
--- limit
+-- -- where clauses-- 
 
-
-select * from student limit 3;
-select * from student where marks>70 limit 3;
-
-select * from student order by marks asc;
-select * from student order by name desc;
-select * from student order by name asc limit 4;
+-- select * from student where marks>80;
+-- select * from student where city='mumbai';
+-- select * from student where marks>80 and city ='mumbai';
+-- select * from student where marks+10 >100;
 
 
--- aggrigate function
+-- select * from student where marks >80 or city = 'delhi';
+-- select * from student where city='delhi' and grade='b';
+-- select * from student where marks between 70 and 90;
+-- select * from student where city in('delhi','noida');
+-- select * from student where city not in ('delhi','noida');
 
-select sum(marks) from student;
-select max(marks) from student;
-select max(grade) from student;
-select min(city) from student;
-select count(name) from student;
-select avg(marks) from student;
-
--- group by clause --
-
-select city , count(id)
-from student
-group by city  ;
-
-select grade, count(id)
-from student
-group by grade;
-
-select city, avg(marks)
-from student
-group by city;
-
-select city,avg(marks)
-from student
-group by city
-order by avg(marks) desc;
+-- -- limit
 
 
--- having clause--
+-- select * from student limit 3;
+-- select * from student where marks>70 limit 3;
 
-  select city, count(id)
-  from student
-  group by city
-  having max(marks)>90;
+-- select * from student order by marks asc;
+-- select * from student order by name desc;
+-- select * from student order by name asc limit 4;
+
+
+-- -- aggrigate function
+
+-- select sum(marks) from student;
+-- select max(marks) from student;
+-- select max(grade) from student;
+-- select min(city) from student;
+-- select count(name) from student;
+-- select avg(marks) from student;
+
+-- -- group by clause --
+
+-- select city , count(id)
+-- from student
+-- group by city  ;
+
+-- select grade, count(id)
+-- from student
+-- group by grade;
+
+-- select city, avg(marks)
+-- from student
+-- group by city;
+
+-- select city,avg(marks)
+-- from student
+-- group by city
+-- order by avg(marks) desc;
+
+
+-- -- having clause--
+
+--   select city, count(id)
+--   from student
+--   group by city
+--   having max(marks)>90;
   
   -- general order--
   
@@ -197,304 +197,304 @@ order by avg(marks) desc;
 
  
 
-select city
-from student
-where grade='a'
-group by city
-having max(marks)>=93
-order by city desc;
+-- select city
+-- from student
+-- where grade='a'
+-- group by city
+-- having max(marks)>=93
+-- order by city desc;
 
 
--- table related queies--
--- update-- 
+-- -- table related queies--
+-- -- update-- 
 
-update student
-set grade='o'
-where grade='a';
+-- update student
+-- set grade='o'
+-- where grade='a';
 
-update student
-set name='shubham'
-where id=101;
+-- update student
+-- set name='shubham'
+-- where id=101;
 
-update student
-set marks=marks+1;
+-- update student
+-- set marks=marks+1;
 
--- delete--
+-- -- delete--
 
-delete from student
-where name='dinesh' ;
+-- delete from student
+-- where name='dinesh' ;
 
-select * from student;
-
-
-
--- forgien key-- 
-
-create table dept(
-id int primary key,
-name varchar(50)
-);
-insert into dept values(101,'english'),(102,'it');
-update dept
-set id=103
-where id=102;
-create table teacher(
-id int primary key,
-name varchar(50),
-dept_id int not null,
-foreign key (dept_id) references dept(id)
-on update cascade
-on delete cascade
-
-);
-insert into teacher values(101,'adam',101),(102,'eve',102);
-select * from dept;
-select * from teacher;
-
-drop table teacher;
-
--- alter--
+-- select * from student;
 
 
--- add --
 
-alter table student
-add column age int;  
-select * from student;
+-- -- forgien key-- 
 
--- drop--
+-- create table dept(
+-- id int primary key,
+-- name varchar(50)
+-- );
+-- insert into dept values(101,'english'),(102,'it');
+-- update dept
+-- set id=103
+-- where id=102;
+-- create table teacher(
+-- id int primary key,
+-- name varchar(50),
+-- dept_id int not null,
+-- foreign key (dept_id) references dept(id)
+-- on update cascade
+-- on delete cascade
 
-alter table student
-drop column age; 
-select * from student;
+-- );
+-- insert into teacher values(101,'adam',101),(102,'eve',102);
+-- select * from dept;
+-- select * from teacher;
 
--- rename--
+-- drop table teacher;
 
-alter table student
-rename to stu;
+-- -- alter--
 
-select * from stu;
 
-alter table stu
-rename to student;
+-- -- add --
 
-alter table student
-add column age varchar(2) default 20;
+-- alter table student
+-- add column age int;  
+-- select * from student;
 
--- modify-- 
+-- -- drop--
 
-alter table student
-modify column age int;
+-- alter table student
+-- drop column age; 
+-- select * from student;
 
--- change--
+-- -- rename--
+
+-- alter table student
+-- rename to stu;
+
+-- select * from stu;
+
+-- alter table stu
+-- rename to student;
+
+-- alter table student
+-- add column age varchar(2) default 20;
+
+-- -- modify-- 
+
+-- alter table student
+-- modify column age int;
+
+-- -- change--
 
  
-alter table student
-change age stu_age varchar(2);
+-- alter table student
+-- change age stu_age varchar(2);
 
-select * from student;
+-- select * from student;
 
-truncate table student;
+-- truncate table student;
 
-alter table student
-change name full_name varchar(50);
+-- alter table student
+-- change name full_name varchar(50);
 
--- joins--
+-- -- joins--
 
-use collage;
-create table studentt(
-id int primary key,
-name varchar(50)
-);
+-- use collage;
+-- create table studentt(
+-- id int primary key,
+-- name varchar(50)
+-- );
 
-insert into studentt
-values
-(101,'adam'),
-(102,'bob'),
-(103,'casey');
+-- insert into studentt
+-- values
+-- (101,'adam'),
+-- (102,'bob'),
+-- (103,'casey');
 
-create table course(
-id int primary key,
-course varchar(50)
-);
-insert into course(id, course)
-values
-(102,'english'),
-(105,'math'),
-(103,'scoence'),
-(107,'cs');
+-- create table course(
+-- id int primary key,
+-- course varchar(50)
+-- );
+-- insert into course(id, course)
+-- values
+-- (102,'english'),
+-- (105,'math'),
+-- (103,'scoence'),
+-- (107,'cs');
 
-select * from studentt;
-select * from course;
+-- select * from studentt;
+-- select * from course;
 
-select *
-from studentt
-inner join course
-on studentt.id=course.id;
+-- select *
+-- from studentt
+-- inner join course
+-- on studentt.id=course.id;
 
-drop table student;
-drop table studentt;
-drop table course;
-
-
-create table student(
-id int primary key,
-name varchar (50)
-);
-insert into student(id,name)
-values
-(101,'adam'),
-(102,'bob'),
-(103,'casey');
-
-create table course(
-id int primary key,
-course varchar(50)
-);
-
-insert into course(id , course)
-values
-(102,'english'),
-(105,'math'),
-(103,'science'),
-(107,'cs');
-
-select *
-from student as s
-left join course as c
-on s.id=c.id;
+-- drop table student;
+-- drop table studentt;
+-- drop table course;
 
 
-select * 
-from student as s
-right join course as c
-on s.id=c.id;
+-- create table student(
+-- id int primary key,
+-- name varchar (50)
+-- );
+-- insert into student(id,name)
+-- values
+-- (101,'adam'),
+-- (102,'bob'),
+-- (103,'casey');
+
+-- create table course(
+-- id int primary key,
+-- course varchar(50)
+-- );
+
+-- insert into course(id , course)
+-- values
+-- (102,'english'),
+-- (105,'math'),
+-- (103,'science'),
+-- (107,'cs');
+
+-- select *
+-- from student as s
+-- left join course as c
+-- on s.id=c.id;
 
 
-create table student(
-id int primary key,
-name varchar (50)
-);
-insert into student(id,name)
-values
-(101,'adam'),
-(102,'bob'),
-(103,'casey');
-
-create table course(
-id int primary key,
-course varchar(50)
-);
-
-insert into course(id , course)
-values
-(102,'english'),
-(105,'math'),
-(103,'science'),
-(107,'cs');
-
-select *
-from student as s
-left join course as c
-on s.id=c.id
-union
-select *
-from student as s
-right join course as c
-on s.id=c.id;
+-- select * 
+-- from student as s
+-- right join course as c
+-- on s.id=c.id;
 
 
-select *
-from student as s
-left join course as c
-on s.id=c.id
-where c.id is null;
+-- create table student(
+-- id int primary key,
+-- name varchar (50)
+-- );
+-- insert into student(id,name)
+-- values
+-- (101,'adam'),
+-- (102,'bob'),
+-- (103,'casey');
 
-select *
-from student as s
-right join course as c
-on s.id=c.id
-where s.id is null;
+-- create table course(
+-- id int primary key,
+-- course varchar(50)
+-- );
 
+-- insert into course(id , course)
+-- values
+-- (102,'english'),
+-- (105,'math'),
+-- (103,'science'),
+-- (107,'cs');
 
-select *
-from student as s
-left join course as c
-on s.id=c.id
-union
-select *
-from student as s
-right join course as c
-on s.id=c.id
-where c.id and s.id is null;
-
--- self join--
-
-select *
-from student as s
-join course as c
-on s.id=c.id; 
-
-create table employee(
-id int primary key,
-name varchar(50),
-manager_id int 
-);
-insert into employee(id , name , manager_id)
-values
-(101,'adam',103),
-(102,'bob',104),
-(103,'casey',null),
-(104,'donald',103);
-
-select a.name as manager_name , b.name
-from employee as a
-join employee as b
-on a.id=b.manager_id;
-
-drop table employee;
-
-create table employee(
-roll_no int primary key,
-name varchar(50),
-marks int ,
-city varchar(50));
-
-insert into employee(roll_no,name,marks,city)
-values
-(101,'anil',78,'pune'),
-(102,'bhumika',93,'mumbai'),
-(103,'chetan',85,'mumbai'),
-(104,'dhruv',96,'delhi'),
-(105,'bob',92,'delhi'),
-(106,'casey',81,'delhi');
-
-select* from employee;
-
-select avg(marks) from employee;
-
-select * from employee
-where marks>(select avg(marks) from employee);
+-- select *
+-- from student as s
+-- left join course as c
+-- on s.id=c.id
+-- union
+-- select *
+-- from student as s
+-- right join course as c
+-- on s.id=c.id;
 
 
-select roll_no from employee
-where roll_no %2 = 0;
+-- select *
+-- from student as s
+-- left join course as c
+-- on s.id=c.id
+-- where c.id is null;
 
-select name from employee
-where roll_no in (select roll_no from employee
-where roll_no %2 = 0);
-
-select max(marks)
-from (select * from employee where city='delhi') as temp;
-
-select(select max(marks) from employee),name from employee;
+-- select *
+-- from student as s
+-- right join course as c
+-- on s.id=c.id
+-- where s.id is null;
 
 
-create view view1 as 
-select roll_no , name , marks
-from employee;
+-- select *
+-- from student as s
+-- left join course as c
+-- on s.id=c.id
+-- union
+-- select *
+-- from student as s
+-- right join course as c
+-- on s.id=c.id
+-- where c.id and s.id is null;
 
-select * from view1
-where marks >90;
+-- -- self join--
 
-drop view view1;
+-- select *
+-- from student as s
+-- join course as c
+-- on s.id=c.id; 
+
+-- create table employee(
+-- id int primary key,
+-- name varchar(50),
+-- manager_id int 
+-- );
+-- insert into employee(id , name , manager_id)
+-- values
+-- (101,'adam',103),
+-- (102,'bob',104),
+-- (103,'casey',null),
+-- (104,'donald',103);
+
+-- select a.name as manager_name , b.name
+-- from employee as a
+-- join employee as b
+-- on a.id=b.manager_id;
+
+-- drop table employee;
+
+-- create table employee(
+-- roll_no int primary key,
+-- name varchar(50),
+-- marks int ,
+-- city varchar(50));
+
+-- insert into employee(roll_no,name,marks,city)
+-- values
+-- (101,'anil',78,'pune'),
+-- (102,'bhumika',93,'mumbai'),
+-- (103,'chetan',85,'mumbai'),
+-- (104,'dhruv',96,'delhi'),
+-- (105,'bob',92,'delhi'),
+-- (106,'casey',81,'delhi');
+
+-- select* from employee;
+
+-- select avg(marks) from employee;
+
+-- select * from employee
+-- where marks>(select avg(marks) from employee);
+
+
+-- select roll_no from employee
+-- where roll_no %2 = 0;
+
+-- select name from employee
+-- where roll_no in (select roll_no from employee
+-- where roll_no %2 = 0);
+
+-- select max(marks)
+-- from (select * from employee where city='delhi') as temp;
+
+-- select(select max(marks) from employee),name from employee;
+
+
+-- create view view1 as 
+-- select roll_no , name , marks
+-- from employee;
+
+-- select * from view1
+-- where marks >90;
+
+-- drop view view1;
