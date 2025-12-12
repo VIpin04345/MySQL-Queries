@@ -28,19 +28,19 @@ select * from student;
 insert into student value(3,'dinesh');
 
 
--- create database if not exists xyz_company;
--- use xyz_company;
--- create table employee(
--- id int primary key,
--- name varchar(50),
--- salary int not null
--- );
--- insert into employee
--- (id,name,salary)
--- value
--- (1,'adam',23000),
--- (2,'bob',25000),
--- (3,'casey',40000);
+create database if not exists xyz_company;
+use xyz_company;
+create table employee(
+id int primary key,
+name varchar(50),
+salary int not null
+);
+insert into employee
+(id,name,salary)
+value
+(1,'adam',23000),
+(2,'bob',25000),
+(3,'casey',40000);
 
 -- select * from employee;
 -- create table student(
