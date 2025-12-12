@@ -15,17 +15,17 @@ show databases;
 show tables;
 drop table student;
 
--- create table student(
--- id int primary key,
--- name varchar(50)
--- );
--- insert into student
--- (id,name)
--- value
--- (1,'shubham'),
--- (2,'kishan');
--- select * from student;
--- insert into student value(3,'dinesh');
+create table student(
+id int primary key,
+name varchar(50)
+);
+insert into student
+(id,name)
+value
+(1,'shubham'),
+(2,'kishan');
+select * from student;
+insert into student value(3,'dinesh');
 
 
 -- create database if not exists xyz_company;
