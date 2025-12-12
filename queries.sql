@@ -61,9 +61,9 @@ values
 (105,'emanuel',12,'f','delhi'),
 (106,'farah',82,'b','delhi');
 
--- select * from student;
--- select city from student;
--- select distinct city from student;
+select * from student;
+select city from student;
+select distinct city from student;
 -- -- clauses................--
 
 -- select *from student where marks>=80;
