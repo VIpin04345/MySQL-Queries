@@ -42,14 +42,14 @@ value
 (2,'bob',25000),
 (3,'casey',40000);
 
--- select * from employee;
--- create table student(
--- id int primary key,
--- name varchar(50),
--- marks int not null,
--- grade varchar(1),
--- city varchar(20)
--- );
+select * from employee;
+create table student(
+id int primary key,
+name varchar(50),
+marks int not null,
+grade varchar(1),
+city varchar(20)
+);
 
 -- insert into student
 -- (id,name,marks,grade,city)
