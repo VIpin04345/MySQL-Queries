@@ -76,12 +76,12 @@ select * from student where marks>90;
 select * from student where marks>90 and city='mumbai';
 select * from student where marks>90 or city='mumbai';
 
--- select * from student where marks between 80 and 90;
--- select* from student where city in('delhi','mumbai','asar');
+select * from student where marks between 80 and 90;
+select* from student where city in('delhi','mumbai','asar');
 
 
 
--- select * from student where city not in ('delhi','mumbai');
+select * from student where city not in ('delhi','mumbai');
 
 -- select * from student where marks>75 limit 3;
 
