@@ -66,12 +66,12 @@ select city from student;
 select distinct city from student;
 -- -- clauses................--
 
--- select *from student where marks>=80;
--- select * from student where city='mumbai'; 
--- select * from student where marks>80 and city='mumbai';
--- select * from student where marks+10>100;
--- select * from student where marks=93;
--- select * from student where marks>90;
+select *from student where marks>=80;
+select * from student where city='mumbai'; 
+select * from student where marks>80 and city='mumbai';
+select * from student where marks+10>100;
+select * from student where marks=93;
+select * from student where marks>90;
 
 -- select * from student where marks>90 and city='mumbai';
 -- select * from student where marks>90 or city='mumbai';
