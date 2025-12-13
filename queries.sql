@@ -83,12 +83,12 @@ select* from student where city in('delhi','mumbai','asar');
 
 select * from student where city not in ('delhi','mumbai');
 
--- select * from student where marks>75 limit 3;
+select * from student where marks>75 limit 3;
 
 -- select * from student order by name asc;
 -- select * from student order by marks asc;
 
--- select * from student order by marks desc limit 3;
+select * from student order by marks desc limit 3;
 
 -- select marks from student;
 -- drop database collage;
