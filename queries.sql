@@ -117,8 +117,8 @@ select * from student;
 select id from student;
 select name from student;
 select marks from student;
--- select grade from student;
--- select city from student;
+select grade from student;
+select city from student;
 
 
 -- select distinct marks from student;
