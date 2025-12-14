@@ -113,8 +113,8 @@ values
 (105,'emanuel',12,'f','delhi'),
 (106,'farah',82,'b','delhi');
 insert into student value(107,'dinesh',92,'a','noida');
--- select * from student;
--- select id from student;
+select * from student;
+select id from student;
 -- select name from student;
 -- select marks from student;
 -- select grade from student;
