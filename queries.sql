@@ -103,16 +103,16 @@ grade varchar(1),
 city varchar(20)
 );
 
--- insert into student
--- (id,name,marks,grade,city)
--- values
--- (101,'anil',78,'c','pune'),
--- (102,'bhumika',93,'a','mumbai'),
--- (103,'chetan',85,'b','mumbai'),
--- (104,'dhruv',96,'a','delhi'),
--- (105,'emanuel',12,'f','delhi'),
--- (106,'farah',82,'b','delhi');
--- insert into student value(107,'dinesh',92,'a','noida');
+insert into student
+(id,name,marks,grade,city)
+values
+(101,'anil',78,'c','pune'),
+(102,'bhumika',93,'a','mumbai'),
+(103,'chetan',85,'b','mumbai'),
+(104,'dhruv',96,'a','delhi'),
+(105,'emanuel',12,'f','delhi'),
+(106,'farah',82,'b','delhi');
+insert into student value(107,'dinesh',92,'a','noida');
 -- select * from student;
 -- select id from student;
 -- select name from student;
