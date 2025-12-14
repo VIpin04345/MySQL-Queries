@@ -90,18 +90,18 @@ select * from student order by marks asc;
 
 select * from student order by marks desc limit 3;
 
--- select marks from student;
--- drop database collage;
+select marks from student;
+drop database collage;
 
--- create database collage;
--- use collage;
--- create table student(
--- id int primary key,
--- name varchar(50),
--- marks int not null,
--- grade varchar(1),
--- city varchar(20)
--- );
+create database collage;
+use collage;
+create table student(
+id int primary key,
+name varchar(50),
+marks int not null,
+grade varchar(1),
+city varchar(20)
+);
 
 -- insert into student
 -- (id,name,marks,grade,city)
