@@ -121,9 +121,9 @@ select grade from student;
 select city from student;
 
 
--- select distinct marks from student;
--- select distinct grade from student;
--- select distinct city from student;
+select distinct marks from student;
+select distinct grade from student;
+select distinct city from student;
 
 -- -- where clauses-- 
 
