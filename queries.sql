@@ -129,8 +129,8 @@ select distinct city from student;
 
 select * from student where marks>80;
 select * from student where city='mumbai';
--- select * from student where marks>80 and city ='mumbai';
--- select * from student where marks+10 >100;
+select * from student where marks>80 and city ='mumbai';
+select * from student where marks+10 >100;
 
 
 -- select * from student where marks >80 or city = 'delhi';
