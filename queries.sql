@@ -137,7 +137,7 @@ select * from student where marks >80 or city = 'delhi';
 select * from student where city='delhi' and grade='b';
 select * from student where marks between 70 and 90;
 select * from student where city in('delhi','noida');
--- select * from student where city not in ('delhi','noida');
+select * from student where city not in ('delhi','noida');
 
 -- -- limit
 
