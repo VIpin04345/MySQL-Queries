@@ -147,7 +147,7 @@ select * from student where marks>70 limit 3;
 
 select * from student order by marks asc;
 select * from student order by name desc;
--- select * from student order by name asc limit 4;
+select * from student order by name asc limit 4;
 
 
 -- -- aggrigate function
