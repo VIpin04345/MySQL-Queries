@@ -143,7 +143,7 @@ select * from student where city not in ('delhi','noida');
 
 
 select * from student limit 3;
--- select * from student where marks>70 limit 3;
+select * from student where marks>70 limit 3;
 
 -- select * from student order by marks asc;
 -- select * from student order by name desc;
