@@ -153,8 +153,8 @@ select * from student order by name asc limit 4;
 -- -- aggrigate function
 
 select sum(marks) from student;
--- select max(marks) from student;
--- select max(grade) from student;
+select max(marks) from student;
+select max(grade) from student;
 -- select min(city) from student;
 -- select count(name) from student;
 -- select avg(marks) from student;
