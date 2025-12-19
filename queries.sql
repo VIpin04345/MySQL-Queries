@@ -169,9 +169,9 @@ select grade, count(id)
 from student
 group by grade;
 
--- select city, avg(marks)
--- from student
--- group by city;
+select city, avg(marks)
+from student
+group by city;
 
 -- select city,avg(marks)
 -- from student
