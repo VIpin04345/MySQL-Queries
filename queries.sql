@@ -173,10 +173,10 @@ select city, avg(marks)
 from student
 group by city;
 
--- select city,avg(marks)
--- from student
--- group by city
--- order by avg(marks) desc;
+select city,avg(marks)
+from student
+group by city
+order by avg(marks) desc;
 
 
 -- -- having clause--
