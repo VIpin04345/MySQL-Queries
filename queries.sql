@@ -188,12 +188,12 @@ order by avg(marks) desc;
   
   -- general order--
   
--- select column(s)
---   from table_name
---   where condition
---   group by column(s)
---   having condition
---   order by coloumn(s) asc , desc 
+select column(s)
+  from table_name
+  where condition
+  group by column(s)
+  having condition
+  order by coloumn(s) asc , desc 
 
  
 
