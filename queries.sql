@@ -181,10 +181,10 @@ order by avg(marks) desc;
 
 -- -- having clause--
 
---   select city, count(id)
---   from student
---   group by city
---   having max(marks)>90;
+  select city, count(id)
+  from student
+  group by city
+  having max(marks)>90;
   
   -- general order--
   
