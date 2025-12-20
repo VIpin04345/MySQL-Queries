@@ -208,9 +208,9 @@ order by city desc;
 -- -- table related queies--
 -- -- update-- 
 
--- update student
--- set grade='o'
--- where grade='a';
+update student
+set grade='o'
+where grade='a';
 
 -- update student
 -- set name='shubham'
