@@ -212,9 +212,9 @@ update student
 set grade='o'
 where grade='a';
 
--- update student
--- set name='shubham'
--- where id=101;
+update student
+set name='shubham'
+where id=101;
 
 -- update student
 -- set marks=marks+1;
