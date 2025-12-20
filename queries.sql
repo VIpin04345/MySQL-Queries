@@ -197,12 +197,12 @@ select column(s)
 
  
 
--- select city
--- from student
--- where grade='a'
--- group by city
--- having max(marks)>=93
--- order by city desc;
+select city
+from student
+where grade='a'
+group by city
+having max(marks)>=93
+order by city desc;
 
 
 -- -- table related queies--
