@@ -216,8 +216,8 @@ update student
 set name='shubham'
 where id=101;
 
--- update student
--- set marks=marks+1;
+update student
+set marks=marks+1;
 
 -- -- delete--
 
