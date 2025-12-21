@@ -234,7 +234,7 @@ create table dept(
 id int primary key,
 name varchar(50)
 );
--- insert into dept values(101,'english'),(102,'it');
+insert into dept values(101,'english'),(102,'it');
 -- update dept
 -- set id=103
 -- where id=102;
