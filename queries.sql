@@ -221,8 +221,8 @@ set marks=marks+1;
 
 -- -- delete--
 
--- delete from student
--- where name='dinesh' ;
+delete from student
+where name='dinesh' ;
 
 -- select * from student;
 
