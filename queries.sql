@@ -235,9 +235,9 @@ id int primary key,
 name varchar(50)
 );
 insert into dept values(101,'english'),(102,'it');
--- update dept
--- set id=103
--- where id=102;
+update dept
+set id=103
+where id=102;
 -- create table teacher(
 -- id int primary key,
 -- name varchar(50),
