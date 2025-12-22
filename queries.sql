@@ -270,8 +270,8 @@ select * from student;
 
 -- -- rename--
 
--- alter table student
--- rename to stu;
+alter table student
+rename to stu;
 
 -- select * from stu;
 
