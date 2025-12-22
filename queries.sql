@@ -246,12 +246,12 @@ foreign key (dept_id) references dept(id)
 on update cascade
 on delete cascade
 
--- );
--- insert into teacher values(101,'adam',101),(102,'eve',102);
--- select * from dept;
--- select * from teacher;
+);
+insert into teacher values(101,'adam',101),(102,'eve',102);
+select * from dept;
+select * from teacher;
 
--- drop table teacher;
+drop table teacher;
 
 -- -- alter--
 
