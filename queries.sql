@@ -258,9 +258,9 @@ drop table teacher;
 
 -- -- add --
 
--- alter table student
--- add column age int;  
--- select * from student;
+alter table student
+add column age int;  
+select * from student;
 
 -- -- drop--
 
