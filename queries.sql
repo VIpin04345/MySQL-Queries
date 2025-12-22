@@ -264,9 +264,9 @@ select * from student;
 
 -- -- drop--
 
--- alter table student
--- drop column age; 
--- select * from student;
+alter table student
+drop column age; 
+select * from student;
 
 -- -- rename--
 
