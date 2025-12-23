@@ -263,12 +263,12 @@ CHANGE COLUMN age stu_age INT;
 -- TRUNCATE TABLE  student;
 
 
--- SELECT * FROM student;
+SELECT * FROM student;
 
 
 
--- ALTER TABLE student
--- CHANGE COLUMN name full_name VARCHAR(50);
+ALTER TABLE student
+CHANGE COLUMN name full_name VARCHAR(50);
 
 -- DELETE FROM student
 -- WHERE marks<80;
