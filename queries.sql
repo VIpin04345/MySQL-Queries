@@ -256,8 +256,8 @@ MODIFY COLUMN age VARCHAR(2);
 ALTER TABLE stu
 RENAME TO student;
 
--- ALTER TABLE student
--- CHANGE COLUMN age stu_age INT;
+ALTER TABLE student
+CHANGE COLUMN age stu_age INT;
 
 
 -- TRUNCATE TABLE  student;
