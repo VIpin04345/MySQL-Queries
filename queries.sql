@@ -273,8 +273,8 @@ CHANGE COLUMN name full_name VARCHAR(50);
 DELETE FROM student
 WHERE marks<80;
 
--- ALTER TABLE student
--- DROP COLUMN grade;
+ALTER TABLE student
+DROP COLUMN grade;
 
 
 -- -- JOINS IN SQL---------------
