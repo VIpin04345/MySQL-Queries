@@ -301,8 +301,8 @@ VALUES
 (103,'Science'),
 (107, 'Computer_science');
 
--- SELECT * FROM students;
--- SELECT * FROM course;
+SELECT * FROM students;
+SELECT * FROM course;
 
 -- -- INNER JOINS----------
 
