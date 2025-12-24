@@ -284,11 +284,11 @@ CREATE TABLE students(
 student_id INT PRIMARY KEY,
 name VARCHAR(20)
 );
--- INSERT INTO students(student_id, name)
--- VALUES
--- (101, 'Adam'),
--- (102,'Bob'),
--- (103,'Casey');
+INSERT INTO students(student_id, name)
+VALUES
+(101, 'Adam'),
+(102,'Bob'),
+(103,'Casey');
 
 -- CREATE TABLE course(
 -- course_id INT PRIMARY KEY,
