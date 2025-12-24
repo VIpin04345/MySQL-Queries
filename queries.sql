@@ -280,10 +280,10 @@ DROP COLUMN grade;
 -- -- JOINS IN SQL---------------
 
 
--- CREATE TABLE students(
--- student_id INT PRIMARY KEY,
--- name VARCHAR(20)
--- );
+CREATE TABLE students(
+student_id INT PRIMARY KEY,
+name VARCHAR(20)
+);
 -- INSERT INTO students(student_id, name)
 -- VALUES
 -- (101, 'Adam'),
