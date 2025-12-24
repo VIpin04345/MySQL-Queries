@@ -294,12 +294,12 @@ CREATE TABLE course(
 course_id INT PRIMARY KEY,
 course_name VARCHAR(20)
 );
--- INSERT INTO course(course_id, course_name)
--- VALUES
--- (102, 'English'),
--- (105,'Math'),
--- (103,'Science'),
--- (107, 'Computer_science');
+INSERT INTO course(course_id, course_name)
+VALUES
+(102, 'English'),
+(105,'Math'),
+(103,'Science'),
+(107, 'Computer_science');
 
 -- SELECT * FROM students;
 -- SELECT * FROM course;
