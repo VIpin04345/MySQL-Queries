@@ -290,10 +290,10 @@ VALUES
 (102,'Bob'),
 (103,'Casey');
 
--- CREATE TABLE course(
--- course_id INT PRIMARY KEY,
--- course_name VARCHAR(20)
--- );
+CREATE TABLE course(
+course_id INT PRIMARY KEY,
+course_name VARCHAR(20)
+);
 -- INSERT INTO course(course_id, course_name)
 -- VALUES
 -- (102, 'English'),
