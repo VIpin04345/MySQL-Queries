@@ -318,10 +318,10 @@ ON s.student_id=c.course_id;
 
 -- -- LEFT JOINS-----------
 
--- SELECT *
--- FROM students as a
--- LEFT JOIN course as b
--- ON a.student_id=b.course_id;
+SELECT *
+FROM students as a
+LEFT JOIN course as b
+ON a.student_id=b.course_id;
 
 -- -- RIGHT JOINS------------
 
