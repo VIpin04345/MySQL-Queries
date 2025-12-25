@@ -306,10 +306,10 @@ SELECT * FROM course;
 
 -- -- INNER JOINS----------
 
--- SELECT * 
--- FROM students
--- INNER JOIN course
--- ON students.student_id=course.course_id;
+SELECT * 
+FROM students
+INNER JOIN course
+ON students.student_id=course.course_id;
 
 -- SELECT * 
 -- FROM students as s
