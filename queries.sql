@@ -352,11 +352,11 @@ WHERE b.course_id IS NULL;
 
 -- -- RIGHT EXCLUSIVE JOINS---------
 
--- SELECT *
--- FROM students as s
--- RIGHT JOIN course as c
--- ON s.student_id=c.course_id
--- WHERE s.student_id IS NULL;
+SELECT *
+FROM students as s
+RIGHT JOIN course as c
+ON s.student_id=c.course_id
+WHERE s.student_id IS NULL;
 
 -- -- FULL EXCLUSIVE JOINS----------
 
