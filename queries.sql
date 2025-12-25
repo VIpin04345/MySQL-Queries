@@ -332,15 +332,15 @@ ON s.student_id=c.course_id;
 
 -- -- FULL OUTER JOINS----------
 
--- SELECT *
--- FROM students as a
--- LEFT JOIN course as b
--- ON a.student_id=b.course_id
--- UNION
--- SELECT *
--- FROM students as s
--- RIGHT JOIN course as c
--- ON s.student_id=c.course_id;
+SELECT *
+FROM students as a
+LEFT JOIN course as b
+ON a.student_id=b.course_id
+UNION
+SELECT *
+FROM students as s
+RIGHT JOIN course as c
+ON s.student_id=c.course_id;
 
 -- -- LEFT EXCLUUSIVE JOINS-------
 
