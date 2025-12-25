@@ -325,10 +325,10 @@ ON a.student_id=b.course_id;
 
 -- -- RIGHT JOINS------------
 
--- SELECT *
--- FROM students as s
--- RIGHT JOIN course as c
--- ON s.student_id=c.course_id;
+SELECT *
+FROM students as s
+RIGHT JOIN course as c
+ON s.student_id=c.course_id;
 
 -- -- FULL OUTER JOINS----------
 
