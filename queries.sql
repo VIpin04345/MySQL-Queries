@@ -311,10 +311,10 @@ FROM students
 INNER JOIN course
 ON students.student_id=course.course_id;
 
--- SELECT * 
--- FROM students as s
--- INNER JOIN course as c
--- ON s.student_id=c.course_id;
+SELECT * 
+FROM students as s
+INNER JOIN course as c
+ON s.student_id=c.course_id;
 
 -- -- LEFT JOINS-----------
 
