@@ -344,11 +344,11 @@ ON s.student_id=c.course_id;
 
 -- -- LEFT EXCLUUSIVE JOINS-------
 
--- SELECT *
--- FROM students as a
--- LEFT JOIN course as b
--- ON a.student_id=b.course_id
--- WHERE b.course_id IS NULL;
+SELECT *
+FROM students as a
+LEFT JOIN course as b
+ON a.student_id=b.course_id
+WHERE b.course_id IS NULL;
 
 -- -- RIGHT EXCLUSIVE JOINS---------
 
