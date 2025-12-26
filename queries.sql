@@ -377,17 +377,17 @@ WHERE s.student_id IS NULL;
 -- -- SELF JOINS-----------
 
 
--- CREATE TABLE employee(
--- id INT PRIMARY KEY,
--- name VARCHAR(20),
--- manager_id INT
--- );
--- INSERT INTO employee(id, name,manager_id)
--- VALUES
--- (101, 'Adam',103),
--- (102,'Bob',104),
--- (103,'Casey',NULL),
--- (104, 'Donald', 103);
+CREATE TABLE employee(
+id INT PRIMARY KEY,
+name VARCHAR(20),
+manager_id INT
+);
+INSERT INTO employee(id, name,manager_id)
+VALUES
+(101, 'Adam',103),
+(102,'Bob',104),
+(103,'Casey',NULL),
+(104, 'Donald', 103);
 
 -- SELECT * FROM employee;
 
