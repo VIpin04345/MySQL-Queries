@@ -391,10 +391,10 @@ VALUES
 
 SELECT * FROM employee;
 
--- SELECT *
--- FROM employee as a
--- JOIN employee as b
--- ON a.id=b.manager_id;
+SELECT *
+FROM employee as a
+JOIN employee as b
+ON a.id=b.manager_id;
 
 -- SELECT a.name as manager_name ,b.name
 -- FROM employee as a
