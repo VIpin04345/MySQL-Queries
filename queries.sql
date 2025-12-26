@@ -389,7 +389,7 @@ VALUES
 (103,'Casey',NULL),
 (104, 'Donald', 103);
 
--- SELECT * FROM employee;
+SELECT * FROM employee;
 
 -- SELECT *
 -- FROM employee as a
