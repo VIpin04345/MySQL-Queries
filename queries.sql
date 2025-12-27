@@ -420,14 +420,14 @@ marks INT NOT NULL,
 grade VARCHAR(1),
 city VARCHAR(20)
 );
--- INSERT INTO studentss(id, name, marks, grade, city)
--- VALUES
--- (101, 'Anil', 78, 'C', 'Pune'),
--- (102, 'Bhumika',93, 'A', 'Mumbai'),
--- (103, 'Chetan', 85, 'B', 'Mumbai'),
--- (104, 'Dhruv', 96, 'A', 'Delhi'),
--- (105, 'Emanuel', 92, 'A', 'Delhi'),
--- (106, 'Farah', 82, 'B', 'Delhi');
+INSERT INTO studentss(id, name, marks, grade, city)
+VALUES
+(101, 'Anil', 78, 'C', 'Pune'),
+(102, 'Bhumika',93, 'A', 'Mumbai'),
+(103, 'Chetan', 85, 'B', 'Mumbai'),
+(104, 'Dhruv', 96, 'A', 'Delhi'),
+(105, 'Emanuel', 92, 'A', 'Delhi'),
+(106, 'Farah', 82, 'B', 'Delhi');
 
 -- SELECT * FROM studentss;
 
