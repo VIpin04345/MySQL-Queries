@@ -432,8 +432,8 @@ VALUES
 SELECT * FROM studentss;
 
 
--- SELECT AVG(marks)
--- FROM studentss;
+SELECT AVG(marks)
+FROM studentss;
 
 -- SELECT name FROM studentss
 -- WHERE marks>87.6667;
