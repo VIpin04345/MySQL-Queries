@@ -402,13 +402,13 @@ JOIN employee as b
 ON a.id=b.manager_id;
 
 -- -- UNION-------------
--- SELECT * FROM employee
--- UNION
--- SELECT * FROM employee;
+SELECT * FROM employee
+UNION
+SELECT * FROM employee;
 
--- SELECT * FROM employee
--- UNION ALL 
--- SELECT * FROM employee;
+SELECT * FROM employee
+UNION ALL 
+SELECT * FROM employee;
 
 -- -- SUBQUERIES------------------
 -- -- MARKS IS GRATER THAN AVRAGE MARKS------------
