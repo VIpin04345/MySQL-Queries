@@ -413,13 +413,13 @@ SELECT * FROM employee;
 -- -- SUBQUERIES------------------
 -- -- MARKS IS GRATER THAN AVRAGE MARKS------------
 
--- CREATE TABLE studentss(
--- id INT PRIMARY KEY,
--- name VARCHAR(50),
--- marks INT NOT NULL,
--- grade VARCHAR(1),
--- city VARCHAR(20)
--- );
+CREATE TABLE studentss(
+id INT PRIMARY KEY,
+name VARCHAR(50),
+marks INT NOT NULL,
+grade VARCHAR(1),
+city VARCHAR(20)
+);
 -- INSERT INTO studentss(id, name, marks, grade, city)
 -- VALUES
 -- (101, 'Anil', 78, 'C', 'Pune'),
