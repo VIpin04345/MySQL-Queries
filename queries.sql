@@ -429,7 +429,7 @@ VALUES
 (105, 'Emanuel', 92, 'A', 'Delhi'),
 (106, 'Farah', 82, 'B', 'Delhi');
 
--- SELECT * FROM studentss;
+SELECT * FROM studentss;
 
 
 -- SELECT AVG(marks)
