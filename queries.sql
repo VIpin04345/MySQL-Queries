@@ -446,9 +446,9 @@ SELECT id
 FROM studentss
 WHERE id % 2 = 0;
 
--- SELECT name , marks, id
--- FROM studentss
--- WHERE id in(SELECT id FROM studentss WHERE id % 2 = 0);
+SELECT name , marks, id
+FROM studentss
+WHERE id in(SELECT id FROM studentss WHERE id % 2 = 0);
 
 -- SELECT MAX(marks)
 -- FROM (SELECT * FROM studentss WHERE city='Delhi') as temp;
