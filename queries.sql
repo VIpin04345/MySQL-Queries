@@ -442,9 +442,9 @@ SELECT name, marks
 FROM studentss
 WHERE marks>(SELECT AVG(marks) FROM studentss);
 
--- SELECT id 
--- FROM studentss
--- WHERE id % 2 = 0;
+SELECT id 
+FROM studentss
+WHERE id % 2 = 0;
 
 -- SELECT name , marks, id
 -- FROM studentss
