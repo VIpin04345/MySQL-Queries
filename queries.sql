@@ -438,9 +438,9 @@ FROM studentss;
 SELECT name FROM studentss
 WHERE marks>87.6667;
 
--- SELECT name, marks
--- FROM studentss
--- WHERE marks>(SELECT AVG(marks) FROM studentss);
+SELECT name, marks
+FROM studentss
+WHERE marks>(SELECT AVG(marks) FROM studentss);
 
 -- SELECT id 
 -- FROM studentss
