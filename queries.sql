@@ -453,8 +453,8 @@ WHERE id in(SELECT id FROM studentss WHERE id % 2 = 0);
 SELECT MAX(marks)
 FROM (SELECT * FROM studentss WHERE city='Delhi') as temp;
 
--- SELECT (SELECT MAX(marks) FROM studentss), name
--- FROM studentss;
+SELECT (SELECT MAX(marks) FROM studentss), name
+FROM studentss;
 
 -- -- VIEWS--------------------
 -- -- IT IS A VIRTUAL TABLE  IT IS A TEMPRORY TABLE 
