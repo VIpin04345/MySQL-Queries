@@ -459,9 +459,9 @@ FROM studentss;
 -- -- VIEWS--------------------
 -- -- IT IS A VIRTUAL TABLE  IT IS A TEMPRORY TABLE 
 
--- CREATE VIEW view1 AS
--- SELECT id,name,marks
--- FROM studentss;
+CREATE VIEW view1 AS
+SELECT id,name,marks
+FROM studentss;
 
 -- SELECT * FROM view1 
 -- WHERE marks>90;
