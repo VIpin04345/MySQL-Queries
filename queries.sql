@@ -472,14 +472,14 @@ DROP VIEW view1;
 
 DROP PROCEDURE IF EXISTS p_name
 
--- CREATE TABLE employees(
--- id INT PRIMARY KEY,
--- f_name VARCHAR(20),
--- l_name VARCHAR(20),
--- desig VARCHAR(30),
--- dept VARCHAR(30),
--- salary INT NOT NULL
--- );
+CREATE TABLE employees(
+id INT PRIMARY KEY,
+f_name VARCHAR(20),
+l_name VARCHAR(20),
+desig VARCHAR(30),
+dept VARCHAR(30),
+salary INT NOT NULL
+);
 -- INSERT INTO employees(id, f_name, l_name, desig, dept, salary)
 -- VALUES
 -- (101, 'Raju', 'Rastogi', 'Manager', 'Loan', 37000),
