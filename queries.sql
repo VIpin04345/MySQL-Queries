@@ -492,7 +492,7 @@ VALUES
 (108, 'John', 'Paul', 'Manager', 'IT', 75000),
 (109, 'Paul', 'Philip', 'Accountant', 'Account', 45000);
 
--- SELECT * FROM employees;
+SELECT * FROM employees;
 
 -- DELIMITER $$
 -- CREATE PROCEDURE emp_info()
