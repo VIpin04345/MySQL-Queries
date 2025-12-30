@@ -480,17 +480,17 @@ desig VARCHAR(30),
 dept VARCHAR(30),
 salary INT NOT NULL
 );
--- INSERT INTO employees(id, f_name, l_name, desig, dept, salary)
--- VALUES
--- (101, 'Raju', 'Rastogi', 'Manager', 'Loan', 37000),
--- (102, 'Sham', 'Mohan', 'Cashier', 'Cash', 32000),
--- (103, 'Baburao', 'Apte', 'Associate', 'Loan', 25000),
--- (104, 'Alex', 'Watt', 'Associate', 'Deposit', 35000),
--- (105, 'Leena', 'Jhonson' , 'Lead', 'Cash', 25000),
--- (106, 'Alex', 'Watt', 'Probation', 'Loan', 40000),
--- (107, 'Rick', 'Watt', 'Manager', 'Account', 45000),
--- (108, 'John', 'Paul', 'Manager', 'IT', 75000),
--- (109, 'Paul', 'Philip', 'Accountant', 'Account', 45000);
+INSERT INTO employees(id, f_name, l_name, desig, dept, salary)
+VALUES
+(101, 'Raju', 'Rastogi', 'Manager', 'Loan', 37000),
+(102, 'Sham', 'Mohan', 'Cashier', 'Cash', 32000),
+(103, 'Baburao', 'Apte', 'Associate', 'Loan', 25000),
+(104, 'Alex', 'Watt', 'Associate', 'Deposit', 35000),
+(105, 'Leena', 'Jhonson' , 'Lead', 'Cash', 25000),
+(106, 'Alex', 'Watt', 'Probation', 'Loan', 40000),
+(107, 'Rick', 'Watt', 'Manager', 'Account', 45000),
+(108, 'John', 'Paul', 'Manager', 'IT', 75000),
+(109, 'Paul', 'Philip', 'Accountant', 'Account', 45000);
 
 -- SELECT * FROM employees;
 
