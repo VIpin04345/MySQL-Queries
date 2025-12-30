@@ -466,11 +466,11 @@ FROM studentss;
 SELECT * FROM view1 
 WHERE marks>90;
 
--- DROP VIEW view1;
+DROP VIEW view1;
 
 -- -- STORED PROCEDURE----------
 
--- -- DROP PROCEDURE IF EXISTS p_name
+DROP PROCEDURE IF EXISTS p_name
 
 -- CREATE TABLE employees(
 -- id INT PRIMARY KEY,
