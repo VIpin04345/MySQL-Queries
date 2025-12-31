@@ -513,7 +513,7 @@ BEGIN
 END $$
 DELIMITER ;
 
--- CALL collage.emp_name('Sham');
+CALL collage.emp_name('Sham');
 
 -- DELIMITER $$
 -- CREATE PROCEDURE get_sum_by_dept(IN p_dept VARCHAR(50), OUT p_sum DECIMAL (10,2))
