@@ -515,13 +515,13 @@ DELIMITER ;
 
 CALL collage.emp_name('Sham');
 
--- DELIMITER $$
--- CREATE PROCEDURE get_sum_by_dept(IN p_dept VARCHAR(50), OUT p_sum DECIMAL (10,2))
--- BEGIN
---     SELECT SUM(salary) INTO p_sum FROM employees
---     WHERE dept=p_dept  ;
--- END $$
--- DELIMITER ;
+DELIMITER $$
+CREATE PROCEDURE get_sum_by_dept(IN p_dept VARCHAR(50), OUT p_sum DECIMAL (10,2))
+BEGIN
+    SELECT SUM(salary) INTO p_sum FROM employees
+    WHERE dept=p_dept  ;
+END $$
+DELIMITER ;
 -- DROP PROCEDURE get_sum_by_dept;
 
 -- -- TRIGGERS----------------------
