@@ -494,12 +494,12 @@ VALUES
 
 SELECT * FROM employees;
 
--- DELIMITER $$
--- CREATE PROCEDURE emp_info()
--- BEGIN
---     SELECT * FROM employees;
--- END $$
--- DELIMITER ;
+DELIMITER $$
+CREATE PROCEDURE emp_info()
+BEGIN
+    SELECT * FROM employees;
+END $$
+DELIMITER ;
 
 -- CALL collage.emp_info();
 -- DROP PROCEDURE emp;
