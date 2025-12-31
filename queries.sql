@@ -522,7 +522,7 @@ BEGIN
     WHERE dept=p_dept  ;
 END $$
 DELIMITER ;
--- DROP PROCEDURE get_sum_by_dept;
+DROP PROCEDURE get_sum_by_dept;
 
 -- -- TRIGGERS----------------------
 -- INSERT INTO employees VALUES (110, 'Shiva', 'Deshai', 'Manager', 'Loan', -37000),
