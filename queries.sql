@@ -501,8 +501,8 @@ BEGIN
 END $$
 DELIMITER ;
 
--- CALL collage.emp_info();
--- DROP PROCEDURE emp;
+CALL collage.emp_info();
+DROP PROCEDURE emp;
 
 -- -- DYNAMIC PROCEDURE TAKING INPUT---------
 -- DELIMITER $$
