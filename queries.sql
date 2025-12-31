@@ -505,13 +505,13 @@ CALL collage.emp_info();
 DROP PROCEDURE emp;
 
 -- -- DYNAMIC PROCEDURE TAKING INPUT---------
--- DELIMITER $$
--- CREATE PROCEDURE emp_name(IN p_name VARCHAR(20))
--- BEGIN
---      SELECT id FROM employees
---      where f_name=p_name;
--- END $$
--- DELIMITER ;
+DELIMITER $$
+CREATE PROCEDURE emp_name(IN p_name VARCHAR(20))
+BEGIN
+     SELECT id FROM employees
+     where f_name=p_name;
+END $$
+DELIMITER ;
 
 -- CALL collage.emp_name('Sham');
 
