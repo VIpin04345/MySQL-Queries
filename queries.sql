@@ -540,11 +540,11 @@ DELIMITER ;
 SELECT * FROM employees;
 -- -- CONDITIONAL STATEMENTS-------------
 
--- CREATE TABLE studant(
--- id INT PRIMARY KEY,
--- name VARCHAR(50),
--- percentage DECIMAL(10,2)
--- );
+CREATE TABLE studant(
+id INT PRIMARY KEY,
+name VARCHAR(50),
+percentage DECIMAL(10,2)
+);
 -- INSERT INTO studant(id, name, percentage)
 -- VALUES
 -- (1, 'Ram', 57),
