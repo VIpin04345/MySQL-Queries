@@ -545,12 +545,12 @@ id INT PRIMARY KEY,
 name VARCHAR(50),
 percentage DECIMAL(10,2)
 );
--- INSERT INTO studant(id, name, percentage)
--- VALUES
--- (1, 'Ram', 57),
--- (2, 'Salman', 28),
--- (3, 'Meera', 81),
--- (4, 'Sarita', 45);
+INSERT INTO studant(id, name, percentage)
+VALUES
+(1, 'Ram', 57),
+(2, 'Salman', 28),
+(3, 'Meera', 81),
+(4, 'Sarita', 45);
 
 -- INSERT INTO studant VALUES(5,'Juhi',47),(6,'Anil',74),(7,'John',64);
 -- SELECT * FROM studant;
