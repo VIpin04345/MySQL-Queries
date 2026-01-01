@@ -525,17 +525,17 @@ DELIMITER ;
 DROP PROCEDURE get_sum_by_dept;
 
 -- -- TRIGGERS----------------------
--- INSERT INTO employees VALUES (110, 'Shiva', 'Deshai', 'Manager', 'Loan', -37000),
--- DELIMITER $$
--- CREATE TRIGGER before_insert
--- BEFORE INSERT ON employees
--- FOR EACH ROW
--- BEGIN
---      IF NEW.salary<0 THEN
---      SET NEW.salary=0;
---      END IF;
--- END $$
--- DELIMITER ;
+INSERT INTO employees VALUES (110, 'Shiva', 'Deshai', 'Manager', 'Loan', -37000),
+DELIMITER $$
+CREATE TRIGGER before_insert
+BEFORE INSERT ON employees
+FOR EACH ROW
+BEGIN
+     IF NEW.salary<0 THEN
+     SET NEW.salary=0;
+     END IF;
+END $$
+DELIMITER ;
 
 -- SELECT * FROM employees;
 -- -- CONDITIONAL STATEMENTS-------------
