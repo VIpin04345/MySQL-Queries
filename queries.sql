@@ -537,7 +537,7 @@ BEGIN
 END $$
 DELIMITER ;
 
--- SELECT * FROM employees;
+SELECT * FROM employees;
 -- -- CONDITIONAL STATEMENTS-------------
 
 -- CREATE TABLE studant(
