@@ -575,5 +575,63 @@ VALUES
 -- FROM studant
 
 
+-- CREATE TABLE employees (
+--     emp_id INT PRIMARY KEY,
+--     name VARCHAR(50),
+--     department VARCHAR(30),
+--     salary INT,
+--     city VARCHAR(30)
+-- );
+-- INSERT INTO employees VALUES
+-- (1, 'Amit', 'IT', 60000, 'Delhi'),
+-- (2, 'Ravi', 'HR', 45000, 'Mumbai'),
+-- (3, 'Sneha', 'IT', 70000, 'Pune'),
+-- (4, 'Neha', 'Finance', 50000, 'Delhi'),
+-- (5, 'Arjun', 'HR', 30000, 'Pune'),
+-- (6, 'Pooja', 'IT', 80000, 'Mumbai'),
+-- (7, 'Karan', 'Finance', 55000, 'Delhi'),
+-- (8, 'Anjali', 'IT', 40000, 'Pune');
+-- SELECT * FROM employees;
+-- SELECT name, salary FROM employees;
+-- SELECT * FROM employees
+-- WHERE salary > 50000;
+-- SELECT * FROM employees
+-- WHERE department = 'IT';
+-- SELECT DISTINCT department FROM employees;
+-- SELECT * FROM employees
+-- ORDER BY salary DESC;
+-- SELECT * FROM employees
+-- ORDER BY salary DESC
+-- LIMIT 3;
+-- SELECT COUNT(*) FROM employees;
+-- SELECT department, COUNT(*) 
+-- FROM employees
+-- GROUP BY department;
+-- SELECT department, COUNT(*)
+-- FROM employees
+-- WHERE salary > 50000
+-- GROUP BY department;
+-- SELECT AVG(salary) FROM employees;
+-- SELECT MAX(salary) FROM employees;
+-- SELECT MIN(salary) FROM employees;
+-- SELECT MAX(salary)
+-- FROM employees
+-- WHERE salary < (SELECT MAX(salary) FROM employees);
+-- SELECT city, COUNT(*)
+-- FROM employees
+-- GROUP BY city;
+-- SELECT * FROM employees
+-- WHERE name LIKE 'A%';
+-- SELECT * FROM employees
+-- WHERE salary BETWEEN 40000 AND 60000;
+-- SELECT * FROM employees
+-- WHERE city IN ('Pune', 'Delhi');
+-- UPDATE employees
+-- SET salary = 35000
+-- WHERE emp_id = 5;
+-- DELETE FROM employees
+-- WHERE emp_id = 8;
+
+
 
 
