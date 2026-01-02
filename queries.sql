@@ -555,9 +555,9 @@ VALUES
 INSERT INTO studant VALUES(5,'Juhi',47),(6,'Anil',74),(7,'John',64);
 SELECT * FROM studant;
 
--- SELECT * ,
--- IF (percentage>=33,'Pass','Fail') as result
--- FROM studant;
+SELECT * ,
+IF (percentage>=33,'Pass','Fail') as result
+FROM studant;
 
 -- SELECT id, name,
 -- IF (percentage>=33,'Pass','Fail') as result
