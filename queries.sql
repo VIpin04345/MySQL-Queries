@@ -563,16 +563,16 @@ SELECT id, name,
 IF (percentage>=33,'Pass','Fail') as result
 FROM studant;
 
--- SELECT * ,
--- CASE
---     WHEN percentage>=80 AND percentage <=100 THEN 'Merit'
---     WHEN percentage>=60 AND percentage <80 THEN '1st Devision'
---     WHEN percentage>=45 AND percentage <60 THEN '2nd Devision'
---     WHEN percentage>=33 AND percentage <=45 THEN '3rd Devision'
---     WHEN percentage<33 THEN 'Fail'
--- 	ELSE 'Not Correct %'
--- END as grade
--- FROM studant
+SELECT * ,
+CASE
+    WHEN percentage>=80 AND percentage <=100 THEN 'Merit'
+    WHEN percentage>=60 AND percentage <80 THEN '1st Devision'
+    WHEN percentage>=45 AND percentage <60 THEN '2nd Devision'
+    WHEN percentage>=33 AND percentage <=45 THEN '3rd Devision'
+    WHEN percentage<33 THEN 'Fail'
+	ELSE 'Not Correct %'
+END as grade
+FROM studant
 
 
 -- CREATE TABLE employees (
