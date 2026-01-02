@@ -559,9 +559,9 @@ SELECT * ,
 IF (percentage>=33,'Pass','Fail') as result
 FROM studant;
 
--- SELECT id, name,
--- IF (percentage>=33,'Pass','Fail') as result
--- FROM studant;
+SELECT id, name,
+IF (percentage>=33,'Pass','Fail') as result
+FROM studant;
 
 -- SELECT * ,
 -- CASE
