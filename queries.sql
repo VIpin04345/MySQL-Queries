@@ -575,13 +575,13 @@ END as grade
 FROM studant
 
 
--- CREATE TABLE employees (
---     emp_id INT PRIMARY KEY,
---     name VARCHAR(50),
---     department VARCHAR(30),
---     salary INT,
---     city VARCHAR(30)
--- );
+CREATE TABLE employees (
+    emp_id INT PRIMARY KEY,
+    name VARCHAR(50),
+    department VARCHAR(30),
+    salary INT,
+    city VARCHAR(30)
+);
 -- INSERT INTO employees VALUES
 -- (1, 'Amit', 'IT', 60000, 'Delhi'),
 -- (2, 'Ravi', 'HR', 45000, 'Mumbai'),
