@@ -591,7 +591,7 @@ INSERT INTO employees VALUES
 (6, 'Pooja', 'IT', 80000, 'Mumbai'),
 (7, 'Karan', 'Finance', 55000, 'Delhi'),
 (8, 'Anjali', 'IT', 40000, 'Pune');
--- SELECT * FROM employees;
+SELECT * FROM employees;
 -- SELECT name, salary FROM employees;
 -- SELECT * FROM employees
 -- WHERE salary > 50000;
