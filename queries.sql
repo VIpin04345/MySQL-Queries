@@ -582,15 +582,15 @@ CREATE TABLE employees (
     salary INT,
     city VARCHAR(30)
 );
--- INSERT INTO employees VALUES
--- (1, 'Amit', 'IT', 60000, 'Delhi'),
--- (2, 'Ravi', 'HR', 45000, 'Mumbai'),
--- (3, 'Sneha', 'IT', 70000, 'Pune'),
--- (4, 'Neha', 'Finance', 50000, 'Delhi'),
--- (5, 'Arjun', 'HR', 30000, 'Pune'),
--- (6, 'Pooja', 'IT', 80000, 'Mumbai'),
--- (7, 'Karan', 'Finance', 55000, 'Delhi'),
--- (8, 'Anjali', 'IT', 40000, 'Pune');
+INSERT INTO employees VALUES
+(1, 'Amit', 'IT', 60000, 'Delhi'),
+(2, 'Ravi', 'HR', 45000, 'Mumbai'),
+(3, 'Sneha', 'IT', 70000, 'Pune'),
+(4, 'Neha', 'Finance', 50000, 'Delhi'),
+(5, 'Arjun', 'HR', 30000, 'Pune'),
+(6, 'Pooja', 'IT', 80000, 'Mumbai'),
+(7, 'Karan', 'Finance', 55000, 'Delhi'),
+(8, 'Anjali', 'IT', 40000, 'Pune');
 -- SELECT * FROM employees;
 -- SELECT name, salary FROM employees;
 -- SELECT * FROM employees
