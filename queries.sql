@@ -599,7 +599,7 @@ SELECT * FROM employees
 WHERE department = 'IT';
 SELECT DISTINCT department FROM employees;
 SELECT * FROM employees
--- ORDER BY salary DESC;
+ORDER BY salary DESC;
 -- SELECT * FROM employees
 -- ORDER BY salary DESC
 -- LIMIT 3;
