@@ -596,7 +596,7 @@ SELECT name, salary FROM employees;
 SELECT * FROM employees
 WHERE salary > 50000;
 SELECT * FROM employees
--- WHERE department = 'IT';
+WHERE department = 'IT';
 -- SELECT DISTINCT department FROM employees;
 -- SELECT * FROM employees
 -- ORDER BY salary DESC;
