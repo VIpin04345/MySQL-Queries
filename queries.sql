@@ -602,8 +602,8 @@ SELECT * FROM employees
 ORDER BY salary DESC;
 SELECT * FROM employees
 ORDER BY salary DESC
--- LIMIT 3;
--- SELECT COUNT(*) FROM employees;
+LIMIT 3;
+SELECT COUNT(*) FROM employees;
 -- SELECT department, COUNT(*) 
 -- FROM employees
 -- GROUP BY department;
