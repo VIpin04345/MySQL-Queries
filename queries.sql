@@ -607,10 +607,10 @@ SELECT COUNT(*) FROM employees;
 SELECT department, COUNT(*) 
 FROM employees
 GROUP BY department;
--- SELECT department, COUNT(*)
--- FROM employees
--- WHERE salary > 50000
--- GROUP BY department;
+SELECT department, COUNT(*)
+FROM employees
+WHERE salary > 50000
+GROUP BY department;
 -- SELECT AVG(salary) FROM employees;
 -- SELECT MAX(salary) FROM employees;
 -- SELECT MIN(salary) FROM employees;
