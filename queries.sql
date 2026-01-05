@@ -606,7 +606,7 @@ LIMIT 3;
 SELECT COUNT(*) FROM employees;
 SELECT department, COUNT(*) 
 FROM employees
--- GROUP BY department;
+GROUP BY department;
 -- SELECT department, COUNT(*)
 -- FROM employees
 -- WHERE salary > 50000
