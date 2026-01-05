@@ -600,8 +600,8 @@ WHERE department = 'IT';
 SELECT DISTINCT department FROM employees;
 SELECT * FROM employees
 ORDER BY salary DESC;
--- SELECT * FROM employees
--- ORDER BY salary DESC
+SELECT * FROM employees
+ORDER BY salary DESC
 -- LIMIT 3;
 -- SELECT COUNT(*) FROM employees;
 -- SELECT department, COUNT(*) 
