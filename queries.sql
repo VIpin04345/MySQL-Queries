@@ -614,12 +614,12 @@ GROUP BY department;
 SELECT AVG(salary) FROM employees;
 SELECT MAX(salary) FROM employees;
 SELECT MIN(salary) FROM employees;
--- SELECT MAX(salary)
--- FROM employees
--- WHERE salary < (SELECT MAX(salary) FROM employees);
--- SELECT city, COUNT(*)
--- FROM employees
--- GROUP BY city;
+SELECT MAX(salary)
+FROM employees
+WHERE salary < (SELECT MAX(salary) FROM employees);
+SELECT city, COUNT(*)
+FROM employees
+GROUP BY city;
 -- SELECT * FROM employees
 -- WHERE name LIKE 'A%';
 -- SELECT * FROM employees
