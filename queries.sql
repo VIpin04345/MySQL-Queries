@@ -629,8 +629,8 @@ WHERE city IN ('Pune', 'Delhi');
 UPDATE employees
 SET salary = 35000
 WHERE emp_id = 5;
--- DELETE FROM employees
--- WHERE emp_id = 8;
+DELETE FROM employees
+WHERE emp_id = 8;
 
 
 
