@@ -620,8 +620,8 @@ WHERE salary < (SELECT MAX(salary) FROM employees);
 SELECT city, COUNT(*)
 FROM employees
 GROUP BY city;
--- SELECT * FROM employees
--- WHERE name LIKE 'A%';
+SELECT * FROM employees
+WHERE name LIKE 'A%';
 -- SELECT * FROM employees
 -- WHERE salary BETWEEN 40000 AND 60000;
 -- SELECT * FROM employees
