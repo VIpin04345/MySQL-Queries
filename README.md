@@ -24,12 +24,8 @@ This project contains MySQL programs and queries designed to demonstrate databas
 
 ---
 
-## 📂 Project Structure
 
 
-
-
----
 
 ## ⚙️ Setup Instructions
 
@@ -47,3 +43,10 @@ mysql-project/
 ├── data.sql # Sample data insertion
 ├── queries.sql # All SQL queries
 └── README.md
+
+
+
+SOURCE schema.sql;
+SOURCE data.sql;
+SOURCE queries.sql;
+
