@@ -45,8 +45,18 @@ mysql-project/
 └── README.md
 
 
-
+# Run the file.
 SOURCE schema.sql;
 SOURCE data.sql;
 SOURCE queries.sql;
 
+
+#🧠 Sample Queries
+-- Fetch all records
+SELECT * FROM students;
+
+-- Update record
+UPDATE students SET age = 22 WHERE id = 1;
+
+-- Delete record
+DELETE FROM students WHERE id = 5;
