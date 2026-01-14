@@ -26,6 +26,21 @@ This project contains MySQL programs and queries designed to demonstrate databas
 
 ## 📂 Project Structure
 
+
+
+
+---
+
+## ⚙️ Setup Instructions
+
+1. Install **MySQL Server**
+2. Open MySQL Workbench / Terminal  
+3. Create a database:
+   ```sql
+   CREATE DATABASE my_project;
+   USE my_project;
+
+
 mysql-project/
 │
 ├── schema.sql # Database & table creation
