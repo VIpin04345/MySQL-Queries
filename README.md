@@ -51,7 +51,7 @@ SOURCE data.sql;
 SOURCE queries.sql;
 
 
-#🧠 Sample Queries
+# Sample Queries
 -- Fetch all records
 SELECT * FROM students;
 
