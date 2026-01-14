@@ -60,3 +60,14 @@ UPDATE students SET age = 22 WHERE id = 1;
 
 -- Delete record
 DELETE FROM students WHERE id = 5;
+
+
+# 🙋‍♂️Author
+
+Vipin Yadav
+
+GitHub: https://github.com/VIpin04345
+
+# ⭐ Support
+
+If you find this project helpful, please give it a star ⭐ on GitHub!
