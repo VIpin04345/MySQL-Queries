@@ -6,3 +6,6 @@ SELECT name, salary FROM emp;
 
 -- 3. Find employees whose salary is greater than 30000
 SELECT * FROM emp WHERE salary > 30000;
+
+-- 4. Find employees with NULL salary
+SELECT * FROM emp WHERE salary IS NULL;
