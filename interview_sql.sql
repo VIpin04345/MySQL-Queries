@@ -15,3 +15,8 @@ SELECT COUNT(*) FROM emp;
 
 -- 6. Find the highest salary
 SELECT MAX(salary) FROM emp;
+
+-- 7. Find the second highest salary (very important)
+SELECT MAX(salary)
+FROM emp
+WHERE salary < (SELECT MAX(salary) FROM emp);
