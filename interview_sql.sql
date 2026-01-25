@@ -20,3 +20,8 @@ SELECT MAX(salary) FROM emp;
 SELECT MAX(salary)
 FROM emp
 WHERE salary < (SELECT MAX(salary) FROM emp);
+
+-- 8. Find employee(s) with the highest salary
+SELECT *
+FROM emp
+WHERE salary = (SELECT MAX(salary) FROM emp);
