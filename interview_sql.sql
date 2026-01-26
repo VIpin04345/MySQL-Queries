@@ -29,9 +29,9 @@ WHERE salary = (SELECT MAX(salary) FROM emp);
 
 
 -- 9. Find total salary department-wise
--- SELECT dept_id, SUM(salary)
--- FROM emp
--- GROUP BY dept_id;
+SELECT dept_id, SUM(salary)
+FROM emp
+GROUP BY dept_id;
 
 -- 10. Find employees earning more than average salary
 -- SELECT *
