@@ -34,9 +34,9 @@ FROM emp
 GROUP BY dept_id;
 
 -- 10. Find employees earning more than average salary
--- SELECT *
--- FROM emp
--- WHERE salary > (SELECT AVG(salary) FROM emp);
+SELECT *
+FROM emp
+WHERE salary > (SELECT AVG(salary) FROM emp);
 
 -- 11. Find duplicate employee names
 -- SELECT name, COUNT(*)
