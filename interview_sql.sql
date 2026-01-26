@@ -54,8 +54,8 @@ ON e1.name = e2.name AND e1.id > e2.id;
 SELECT * FROM emp WHERE name LIKE 'A%';
 
 -- 14. Find employees with salary between 20000 and 50000
--- SELECT * FROM emp
--- WHERE salary BETWEEN 20000 AND 50000;
+SELECT * FROM emp
+WHERE salary BETWEEN 20000 AND 50000;
 
 -- 15. Find top 5 highest paid employees
 -- SELECT *
