@@ -58,10 +58,10 @@ SELECT * FROM emp
 WHERE salary BETWEEN 20000 AND 50000;
 
 -- 15. Find top 5 highest paid employees
--- SELECT *
--- FROM emp
--- ORDER BY salary DESC
--- LIMIT 5;
+SELECT *
+FROM emp
+ORDER BY salary DESC
+LIMIT 5;
 
 -- 🔗 JOIN BASED SQL PROBLEMS (Most Asked)
 -- 16. Fetch employee name with department name
