@@ -64,11 +64,11 @@ ORDER BY salary DESC
 LIMIT 5;
 
 -- 🔗 JOIN BASED SQL PROBLEMS (Most Asked)
--- 16. Fetch employee name with department name
--- SELECT e.name, d.dept_name
--- FROM emp e
--- INNER JOIN dept d
--- ON e.dept_id = d.id;
+16. Fetch employee name with department name
+SELECT e.name, d.dept_name
+FROM emp e
+INNER JOIN dept d
+ON e.dept_id = d.id;
 
 -- 17. Find employees without any department
 -- SELECT e.*
