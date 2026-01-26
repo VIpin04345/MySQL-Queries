@@ -39,10 +39,10 @@ FROM emp
 WHERE salary > (SELECT AVG(salary) FROM emp);
 
 -- 11. Find duplicate employee names
--- SELECT name, COUNT(*)
--- FROM emp
--- GROUP BY name
--- HAVING COUNT(*) > 1;
+SELECT name, COUNT(*)
+FROM emp
+GROUP BY name
+HAVING COUNT(*) > 1;
 
 -- 12. Delete duplicate records
 -- DELETE e1
