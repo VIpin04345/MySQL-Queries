@@ -51,7 +51,7 @@ JOIN emp e2
 ON e1.name = e2.name AND e1.id > e2.id;
 
 -- 13. Find employees whose name starts with 'A'
--- SELECT * FROM emp WHERE name LIKE 'A%';
+SELECT * FROM emp WHERE name LIKE 'A%';
 
 -- 14. Find employees with salary between 20000 and 50000
 -- SELECT * FROM emp
