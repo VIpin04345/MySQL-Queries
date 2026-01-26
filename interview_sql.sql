@@ -45,10 +45,10 @@ GROUP BY name
 HAVING COUNT(*) > 1;
 
 -- 12. Delete duplicate records
--- DELETE e1
--- FROM emp e1
--- JOIN emp e2
--- ON e1.name = e2.name AND e1.id > e2.id;
+DELETE e1
+FROM emp e1
+JOIN emp e2
+ON e1.name = e2.name AND e1.id > e2.id;
 
 -- 13. Find employees whose name starts with 'A'
 -- SELECT * FROM emp WHERE name LIKE 'A%';
