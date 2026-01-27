@@ -95,7 +95,7 @@ WHERE 3 = (
 );
 
 -- 20. Find employees with even salary
--- SELECT * FROM emp WHERE salary % 2 = 0;
+SELECT * FROM emp WHERE salary % 2 = 0;
 
 -- 21. Find employees with odd salary
 -- SELECT * FROM emp WHERE salary % 2 != 0;
