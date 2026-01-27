@@ -101,12 +101,12 @@ SELECT * FROM emp WHERE salary % 2 = 0;
 SELECT * FROM emp WHERE salary % 2 != 0;
 
 -- 22. Categorize salary as High or Low
--- SELECT name,
--- CASE
---  WHEN salary >= 50000 THEN 'High'
---  ELSE 'Low'
--- END AS salary_level
--- FROM emp;
+SELECT name,
+CASE
+ WHEN salary >= 50000 THEN 'High'
+ ELSE 'Low'
+END AS salary_level
+FROM emp;
 
 -- 23. Fetch the latest inserted record
 -- SELECT *
