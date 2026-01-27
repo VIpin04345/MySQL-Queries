@@ -98,7 +98,7 @@ WHERE 3 = (
 SELECT * FROM emp WHERE salary % 2 = 0;
 
 -- 21. Find employees with odd salary
--- SELECT * FROM emp WHERE salary % 2 != 0;
+SELECT * FROM emp WHERE salary % 2 != 0;
 
 -- 22. Categorize salary as High or Low
 -- SELECT name,
