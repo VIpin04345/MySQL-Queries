@@ -109,10 +109,10 @@ END AS salary_level
 FROM emp;
 
 -- 23. Fetch the latest inserted record
--- SELECT *
--- FROM emp
--- ORDER BY created_at DESC
--- LIMIT 1;
+SELECT *
+FROM emp
+ORDER BY created_at DESC
+LIMIT 1;
 
 -- 24. Find highest salary in each department
 -- SELECT dept_id, MAX(salary)
