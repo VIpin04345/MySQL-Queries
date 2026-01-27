@@ -78,11 +78,11 @@ ON e.dept_id = d.id
 WHERE d.id IS NULL;
 
 -- 18. Find departments with no employees
--- SELECT d.*
--- FROM dept d
--- LEFT JOIN emp e
--- ON d.id = e.dept_id
--- WHERE e.id IS NULL;
+SELECT d.*
+FROM dept d
+LEFT JOIN emp e
+ON d.id = e.dept_id
+WHERE e.id IS NULL;
 
 -- 🚀 ADVANCED SQL PROBLEMS
 -- 19. Find the third highest salary
