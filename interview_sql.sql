@@ -86,13 +86,13 @@ WHERE e.id IS NULL;
 
 -- 🚀 ADVANCED SQL PROBLEMS
 -- 19. Find the third highest salary
--- SELECT DISTINCT salary
--- FROM emp e1
--- WHERE 3 = (
---   SELECT COUNT(DISTINCT salary)
---   FROM emp e2
---   WHERE e2.salary >= e1.salary
--- );
+SELECT DISTINCT salary
+FROM emp e1
+WHERE 3 = (
+  SELECT COUNT(DISTINCT salary)
+  FROM emp e2
+  WHERE e2.salary >= e1.salary
+);
 
 -- 20. Find employees with even salary
 -- SELECT * FROM emp WHERE salary % 2 = 0;
