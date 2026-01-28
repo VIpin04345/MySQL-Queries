@@ -133,9 +133,9 @@ CREATE INDEX idx_salary ON emp(salary);
 EXPLAIN SELECT * FROM emp WHERE salary > 40000;
 
 -- 28. Transaction example
--- START TRANSACTION;
--- UPDATE emp SET salary = salary + 5000 WHERE id = 1;
--- ROLLBACK;
+START TRANSACTION;
+UPDATE emp SET salary = salary + 5000 WHERE id = 1;
+ROLLBACK;
 
 -- 29. Stored Procedure example
 -- CREATE PROCEDURE getEmployees()
