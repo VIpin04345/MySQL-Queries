@@ -144,7 +144,7 @@ BEGIN
 END;
 
 -- 30. Trigger example
--- CREATE TRIGGER before_emp_insert
--- BEFORE INSERT ON emp
--- FOR EACH ROW
--- SET NEW.salary = IFNULL(NEW.salary, 0);
+CREATE TRIGGER before_emp_insert
+BEFORE INSERT ON emp
+FOR EACH ROW
+SET NEW.salary = IFNULL(NEW.salary, 0);
