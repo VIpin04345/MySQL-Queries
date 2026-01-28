@@ -138,10 +138,10 @@ UPDATE emp SET salary = salary + 5000 WHERE id = 1;
 ROLLBACK;
 
 -- 29. Stored Procedure example
--- CREATE PROCEDURE getEmployees()
--- BEGIN
---  SELECT * FROM emp;
--- END;
+CREATE PROCEDURE getEmployees()
+BEGIN
+ SELECT * FROM emp;
+END;
 
 -- 30. Trigger example
 -- CREATE TRIGGER before_emp_insert
