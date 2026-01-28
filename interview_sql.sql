@@ -127,7 +127,7 @@ ON e.manager_id = m.id;
 
 -- ⚡ PERFORMANCE & REAL-WORLD SQL
 -- 26. Create an index on salary column
--- CREATE INDEX idx_salary ON emp(salary);
+CREATE INDEX idx_salary ON emp(salary);
 
 -- 27. Analyze query performance
 -- EXPLAIN SELECT * FROM emp WHERE salary > 40000;
