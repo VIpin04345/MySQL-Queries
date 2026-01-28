@@ -115,9 +115,9 @@ ORDER BY created_at DESC
 LIMIT 1;
 
 -- 24. Find highest salary in each department
--- SELECT dept_id, MAX(salary)
--- FROM emp
--- GROUP BY dept_id;
+SELECT dept_id, MAX(salary)
+FROM emp
+GROUP BY dept_id;
 
 -- 25. Display employee and their manager (Self Join)
 -- SELECT e.name AS employee, m.name AS manager
