@@ -120,10 +120,10 @@ FROM emp
 GROUP BY dept_id;
 
 -- 25. Display employee and their manager (Self Join)
--- SELECT e.name AS employee, m.name AS manager
--- FROM emp e
--- JOIN emp m
--- ON e.manager_id = m.id;
+SELECT e.name AS employee, m.name AS manager
+FROM emp e
+JOIN emp m
+ON e.manager_id = m.id;
 
 -- ⚡ PERFORMANCE & REAL-WORLD SQL
 -- 26. Create an index on salary column
