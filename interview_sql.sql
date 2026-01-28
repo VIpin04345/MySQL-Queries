@@ -130,7 +130,7 @@ ON e.manager_id = m.id;
 CREATE INDEX idx_salary ON emp(salary);
 
 -- 27. Analyze query performance
--- EXPLAIN SELECT * FROM emp WHERE salary > 40000;
+EXPLAIN SELECT * FROM emp WHERE salary > 40000;
 
 -- 28. Transaction example
 -- START TRANSACTION;
