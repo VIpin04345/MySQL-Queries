@@ -10,6 +10,9 @@ SELECT * FROM emp WHERE salary > 30000;
 -- 4. Find employees with NULL salary
 SELECT * FROM emp WHERE salary IS NULL;
 
+
+
+
 -- 5. Count total number of employees
 SELECT COUNT(*) FROM emp;
 
