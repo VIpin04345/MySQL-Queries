@@ -15,7 +15,6 @@ SELECT COUNT(*) FROM emp;
 
 
 
-
 -- 6. Find the highest salary
 SELECT MAX(salary) FROM emp;
 
