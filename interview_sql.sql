@@ -13,7 +13,6 @@ SELECT * FROM emp WHERE salary IS NULL;
 -- 5. Count total number of employees
 SELECT COUNT(*) FROM emp;
 
-
 -- 6. Find the highest salary
 SELECT MAX(salary) FROM emp;
 
