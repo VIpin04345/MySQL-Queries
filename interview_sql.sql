@@ -195,17 +195,99 @@ WHERE d.id IS NULL;
 
 -- Department-wise Highest Salary
 
-SELECT dept_id, MAX(salary) AS max_salary
-FROM employees
-GROUP BY dept_id;
+-- SELECT dept_id, MAX(salary) AS max_salary
+-- FROM employees
+-- GROUP BY dept_id;
 
--- Advanced version (employee name also):
+-- -- Advanced version (employee name also):
 
-SELECT e.*
-FROM employees e
-JOIN (
-  SELECT dept_id, MAX(salary) salary
-  FROM employees
-  GROUP BY dept_id
-) t
-ON e.dept_id = t.dept_id AND e.salary = t.salary;
+-- SELECT e.*
+-- FROM employees e
+-- JOIN (
+--   SELECT dept_id, MAX(salary) salary
+--   FROM employees
+--   GROUP BY dept_id
+-- ) t
+-- ON e.dept_id = t.dept_id AND e.salary = t.salary;
+
+
+-- 6️⃣ Count Employees in Each Department
+-- SELECT dept_id, COUNT(*) AS total_emp
+-- FROM employees
+-- GROUP BY dept_id;
+
+-- 7️⃣ Find Employees Earning Above Average Salary
+-- SELECT *
+-- FROM employees
+-- WHERE salary > (SELECT AVG(salary) FROM employees);
+
+-- 8️⃣ Customers Who Never Ordered
+-- SELECT c.*
+-- FROM customers c
+-- LEFT JOIN orders o
+-- ON c.id = o.customer_id
+-- WHERE o.id IS NULL;
+
+
+-- 🚨 Very common interview question.
+
+-- 9️⃣ Find Consecutive Records (Login 3 Days in a Row)
+-- SELECT DISTINCT a.user_id
+-- FROM logins a
+-- JOIN logins b ON a.user_id = b.user_id AND b.login_date = a.login_date + INTERVAL 1 DAY
+-- JOIN logins c ON a.user_id = c.user_id AND c.login_date = a.login_date + INTERVAL 2 DAY;
+
+
+-- 🔥 Seen in product companies.
+
+-- 🔟 Remove Duplicate Rows (Keep Lowest ID)
+-- DELETE FROM employees
+-- WHERE id NOT IN (
+--   SELECT MIN(id)
+--   FROM employees
+--   GROUP BY email
+-- );
+
+-- 1️⃣1️⃣ Find Employees with Same Salary
+-- SELECT salary
+-- FROM employees
+-- GROUP BY salary
+-- HAVING COUNT(*) > 1;
+
+-- 1️⃣2️⃣ Fetch Last 3 Records
+-- SELECT *
+-- FROM employees
+-- ORDER BY id DESC
+-- LIMIT 3;
+
+-- 1️⃣3️⃣ Difference Between WHERE and HAVING
+-- -- WHERE works before GROUP BY
+-- SELECT dept_id, COUNT(*)
+-- FROM employees
+-- WHERE salary > 30000
+-- GROUP BY dept_id;
+
+-- -- HAVING works after GROUP BY
+-- SELECT dept_id, COUNT(*)
+-- FROM employees
+-- GROUP BY dept_id
+-- HAVING COUNT(*) > 5;
+
+
+-- 📌 Interview must-know
+
+-- 1️⃣4️⃣ Find Even / Odd Records
+-- -- Even
+-- SELECT * FROM employees WHERE MOD(id,2)=0;
+
+-- -- Odd
+-- SELECT * FROM employees WHERE MOD(id,2)=1;
+
+-- 1️⃣5️⃣ Highest Salary Without LIMIT
+-- SELECT salary
+-- FROM employees e1
+-- WHERE 1 = (
+--   SELECT COUNT(DISTINCT salary)
+--   FROM employees e2
+--   WHERE e2.salary >= e1.salary
+-- );
