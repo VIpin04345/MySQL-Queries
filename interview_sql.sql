@@ -198,3 +198,14 @@ WHERE d.id IS NULL;
 SELECT dept_id, MAX(salary) AS max_salary
 FROM employees
 GROUP BY dept_id;
+
+-- Advanced version (employee name also):
+
+SELECT e.*
+FROM employees e
+JOIN (
+  SELECT dept_id, MAX(salary) salary
+  FROM employees
+  GROUP BY dept_id
+) t
+ON e.dept_id = t.dept_id AND e.salary = t.salary;
