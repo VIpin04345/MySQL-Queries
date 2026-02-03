@@ -176,3 +176,11 @@ SELECT email, COUNT(*) AS cnt
 FROM users
 GROUP BY email
 HAVING COUNT(*) > 1;
+
+
+--Follow-up: delete duplicates? (keep one)
+
+DELETE u1
+FROM users u1
+JOIN users u2
+ON u1.email = u2.email AND u1.id > u2.id;
