@@ -184,3 +184,11 @@ DELETE u1
 FROM users u1
 JOIN users u2
 ON u1.email = u2.email AND u1.id > u2.id;
+
+
+-- Employees with No Department
+SELECT e.*
+FROM employees e
+LEFT JOIN departments d
+ON e.dept_id = d.id
+WHERE d.id IS NULL;
