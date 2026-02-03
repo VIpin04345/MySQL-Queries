@@ -169,3 +169,10 @@ SELECT DISTINCT salary
 FROM employees
 ORDER BY salary DESC
 LIMIT N-1, 1;
+
+--Find duplicate emails.
+
+SELECT email, COUNT(*) AS cnt
+FROM users
+GROUP BY email
+HAVING COUNT(*) > 1;
