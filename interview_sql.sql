@@ -192,3 +192,9 @@ FROM employees e
 LEFT JOIN departments d
 ON e.dept_id = d.id
 WHERE d.id IS NULL;
+
+-- Department-wise Highest Salary
+
+SELECT dept_id, MAX(salary) AS max_salary
+FROM employees
+GROUP BY dept_id;
