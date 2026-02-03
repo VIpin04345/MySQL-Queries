@@ -148,3 +148,15 @@ CREATE TRIGGER before_emp_insert
 BEFORE INSERT ON emp
 FOR EACH ROW
 SET NEW.salary = IFNULL(NEW.salary, 0);
+
+
+
+----------------------------------------------------------------------------------------------------------------
+
+
+
+--Find the second highest salary from employees table.
+
+SELECT MAX(salary) AS SecondHighestSalary
+FROM employees
+WHERE salary < (SELECT MAX(salary) FROM employees);
