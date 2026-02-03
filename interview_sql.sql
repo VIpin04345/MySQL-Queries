@@ -160,3 +160,12 @@ SET NEW.salary = IFNULL(NEW.salary, 0);
 SELECT MAX(salary) AS SecondHighestSalary
 FROM employees
 WHERE salary < (SELECT MAX(salary) FROM employees);
+
+
+
+--Find the Nth highest salary.
+
+SELECT DISTINCT salary
+FROM employees
+ORDER BY salary DESC
+LIMIT N-1, 1;
