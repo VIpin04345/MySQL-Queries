@@ -212,9 +212,9 @@ ON e.dept_id = t.dept_id AND e.salary = t.salary;
 
 
 -- 6️⃣ Count Employees in Each Department
--- SELECT dept_id, COUNT(*) AS total_emp
--- FROM employees
--- GROUP BY dept_id;
+SELECT dept_id, COUNT(*) AS total_emp
+FROM employees
+GROUP BY dept_id;
 
 -- 7️⃣ Find Employees Earning Above Average Salary
 -- SELECT *
