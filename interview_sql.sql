@@ -217,9 +217,9 @@ FROM employees
 GROUP BY dept_id;
 
 -- 7️⃣ Find Employees Earning Above Average Salary
--- SELECT *
--- FROM employees
--- WHERE salary > (SELECT AVG(salary) FROM employees);
+SELECT *
+FROM employees
+WHERE salary > (SELECT AVG(salary) FROM employees);
 
 -- 8️⃣ Customers Who Never Ordered
 -- SELECT c.*
