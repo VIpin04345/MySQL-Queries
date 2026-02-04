@@ -222,11 +222,11 @@ FROM employees
 WHERE salary > (SELECT AVG(salary) FROM employees);
 
 -- 8️⃣ Customers Who Never Ordered
--- SELECT c.*
--- FROM customers c
--- LEFT JOIN orders o
--- ON c.id = o.customer_id
--- WHERE o.id IS NULL;
+SELECT c.*
+FROM customers c
+LEFT JOIN orders o
+ON c.id = o.customer_id
+WHERE o.id IS NULL;
 
 
 -- 🚨 Very common interview question.
