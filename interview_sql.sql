@@ -195,9 +195,9 @@ WHERE d.id IS NULL;
 
 -- Department-wise Highest Salary
 
--- SELECT dept_id, MAX(salary) AS max_salary
--- FROM employees
--- GROUP BY dept_id;
+SELECT dept_id, MAX(salary) AS max_salary
+FROM employees
+GROUP BY dept_id;
 
 -- -- Advanced version (employee name also):
 
