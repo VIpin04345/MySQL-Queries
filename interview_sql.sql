@@ -249,10 +249,10 @@ WHERE id NOT IN (
 );
 
 -- 1️⃣1️⃣ Find Employees with Same Salary
--- SELECT salary
--- FROM employees
--- GROUP BY salary
--- HAVING COUNT(*) > 1;
+SELECT salary
+FROM employees
+GROUP BY salary
+HAVING COUNT(*) > 1;
 
 -- 1️⃣2️⃣ Fetch Last 3 Records
 -- SELECT *
