@@ -232,10 +232,10 @@ WHERE o.id IS NULL;
 -- 🚨 Very common interview question.
 
 -- 9️⃣ Find Consecutive Records (Login 3 Days in a Row)
--- SELECT DISTINCT a.user_id
--- FROM logins a
--- JOIN logins b ON a.user_id = b.user_id AND b.login_date = a.login_date + INTERVAL 1 DAY
--- JOIN logins c ON a.user_id = c.user_id AND c.login_date = a.login_date + INTERVAL 2 DAY;
+SELECT DISTINCT a.user_id
+FROM logins a
+JOIN logins b ON a.user_id = b.user_id AND b.login_date = a.login_date + INTERVAL 1 DAY
+JOIN logins c ON a.user_id = c.user_id AND c.login_date = a.login_date + INTERVAL 2 DAY;
 
 
 -- 🔥 Seen in product companies.
