@@ -255,10 +255,10 @@ GROUP BY salary
 HAVING COUNT(*) > 1;
 
 -- 1️⃣2️⃣ Fetch Last 3 Records
--- SELECT *
--- FROM employees
--- ORDER BY id DESC
--- LIMIT 3;
+SELECT *
+FROM employees
+ORDER BY id DESC
+LIMIT 3;
 
 -- 1️⃣3️⃣ Difference Between WHERE and HAVING
 -- -- WHERE works before GROUP BY
