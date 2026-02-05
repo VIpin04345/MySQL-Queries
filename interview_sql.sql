@@ -241,12 +241,12 @@ JOIN logins c ON a.user_id = c.user_id AND c.login_date = a.login_date + INTERVA
 -- 🔥 Seen in product companies.
 
 -- 🔟 Remove Duplicate Rows (Keep Lowest ID)
--- DELETE FROM employees
--- WHERE id NOT IN (
---   SELECT MIN(id)
---   FROM employees
---   GROUP BY email
--- );
+DELETE FROM employees
+WHERE id NOT IN (
+  SELECT MIN(id)
+  FROM employees
+  GROUP BY email
+);
 
 -- 1️⃣1️⃣ Find Employees with Same Salary
 -- SELECT salary
