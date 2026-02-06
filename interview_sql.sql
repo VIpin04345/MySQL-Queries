@@ -286,8 +286,8 @@ SELECT * FROM employees WHERE MOD(id,2)=1;
 -- 1️⃣5️⃣ Highest Salary Without LIMIT
 SELECT salary
 FROM employees e1
--- WHERE 1 = (
---   SELECT COUNT(DISTINCT salary)
+WHERE 1 = (
+  SELECT COUNT(DISTINCT salary)
 --   FROM employees e2
 --   WHERE e2.salary >= e1.salary
 -- );
