@@ -278,7 +278,7 @@ HAVING COUNT(*) > 5;
 
 -- 1️⃣4️⃣ Find Even / Odd Records
 -- -- Even
--- SELECT * FROM employees WHERE MOD(id,2)=0;
+SELECT * FROM employees WHERE MOD(id,2)=0;
 
 -- -- Odd
 -- SELECT * FROM employees WHERE MOD(id,2)=1;
