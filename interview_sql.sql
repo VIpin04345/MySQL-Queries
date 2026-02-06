@@ -284,8 +284,8 @@ SELECT * FROM employees WHERE MOD(id,2)=0;
 SELECT * FROM employees WHERE MOD(id,2)=1;
 
 -- 1️⃣5️⃣ Highest Salary Without LIMIT
--- SELECT salary
--- FROM employees e1
+SELECT salary
+FROM employees e1
 -- WHERE 1 = (
 --   SELECT COUNT(DISTINCT salary)
 --   FROM employees e2
