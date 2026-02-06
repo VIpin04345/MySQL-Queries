@@ -281,7 +281,7 @@ HAVING COUNT(*) > 5;
 SELECT * FROM employees WHERE MOD(id,2)=0;
 
 -- -- Odd
--- SELECT * FROM employees WHERE MOD(id,2)=1;
+SELECT * FROM employees WHERE MOD(id,2)=1;
 
 -- 1️⃣5️⃣ Highest Salary Without LIMIT
 -- SELECT salary
