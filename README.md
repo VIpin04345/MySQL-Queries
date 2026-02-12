@@ -1,5 +1,4 @@
 # MySQL-Queries
-MySQL queries for databases.
 
 # 🗄️ MySQL Database Project
 
