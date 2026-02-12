@@ -24,8 +24,6 @@ This project contains MySQL programs and queries designed to demonstrate databas
 ---
 
 
-
-
 ## ⚙️ Setup Instructions
 
 1. Install **MySQL Server**
