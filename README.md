@@ -14,8 +14,6 @@ This project contains MySQL programs and queries designed to demonstrate databas
 - Use of joins, constraints, and indexes  
 - Beginner-friendly SQL queries  
 
-
-
 ---
 
 ## 🛠️ Tech Stack
