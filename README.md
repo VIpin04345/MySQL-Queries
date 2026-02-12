@@ -46,6 +46,7 @@ mysql-project/
 └── README.md
 
 
+
 # Run the file.
 SOURCE schema.sql;
 SOURCE data.sql;
