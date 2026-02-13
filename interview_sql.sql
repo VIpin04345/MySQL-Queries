@@ -289,3 +289,18 @@ WHERE 1 = (
   FROM employees e2
   WHERE e2.salary >= e1.salary
 );
+
+
+CREATE TABLE Department (
+    Id INT PRIMARY KEY,
+    Name VARCHAR(50)
+);
+
+CREATE TABLE Employee (
+    Id INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Salary INT,
+    DepartmentId INT,
+    FOREIGN KEY (DepartmentId) REFERENCES Department(Id)
+);
+
