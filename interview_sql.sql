@@ -316,3 +316,17 @@ INSERT INTO Employee VALUES
 (3,'Henry',80000,2),
 (4,'Sam',60000,2),
 (5,'Max',90000,1);
+
+
+SELECT d.Name AS Department,
+       e.Name AS Employee,
+       e.Salary
+FROM Employee e
+JOIN Department d ON e.DepartmentId = d.Id
+JOIN (
+    SELECT DepartmentId, MAX(Salary) AS MaxSalary
+    FROM Employee
+    GROUP BY DepartmentId
+) m
+ON e.DepartmentId = m.DepartmentId
+AND e.Salary = m.MaxSalary;
