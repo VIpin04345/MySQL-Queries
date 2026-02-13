@@ -341,3 +341,10 @@ SELECT Name, COUNT(*)
 FROM Employee
 GROUP BY Name
 HAVING COUNT(*) > 1;
+
+
+SELECT e.*
+FROM Employee e
+LEFT JOIN Department d 
+ON e.DepartmentId = d.Id
+WHERE d.Id IS NULL;
