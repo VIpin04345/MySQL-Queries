@@ -357,3 +357,8 @@ CREATE TABLE students (
     marks INT,
     city VARCHAR(50)
 );
+
+
+
+INSERT INTO students (name, age, marks, city)
+VALUES ('Rahul', 20, 85, 'Mumbai');
