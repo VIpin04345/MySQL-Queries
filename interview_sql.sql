@@ -362,3 +362,5 @@ CREATE TABLE students (
 
 INSERT INTO students (name, age, marks, city)
 VALUES ('Rahul', 20, 85, 'Mumbai');
+
+SELECT * FROM students;
