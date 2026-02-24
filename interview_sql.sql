@@ -372,3 +372,6 @@ WHERE marks > 80;
 UPDATE students
 SET marks = 90
 WHERE id = 1;
+
+DELETE FROM students
+WHERE id = 2;
