@@ -375,3 +375,6 @@ WHERE id = 1;
 
 DELETE FROM students
 WHERE id = 2;
+
+SELECT * FROM students
+ORDER BY marks DESC;
