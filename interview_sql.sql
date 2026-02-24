@@ -378,3 +378,7 @@ WHERE id = 2;
 
 SELECT * FROM students
 ORDER BY marks DESC;
+
+SELECT city, COUNT(*) AS total_students
+FROM students
+GROUP BY city;
