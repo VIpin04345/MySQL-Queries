@@ -382,3 +382,11 @@ ORDER BY marks DESC;
 SELECT city, COUNT(*) AS total_students
 FROM students
 GROUP BY city;
+--------------------------------------------------------------------------------
+
+
+-- . Find top 5 highest paid employees
+SELECT *
+FROM emp
+ORDER BY salary DESC
+LIMIT 5;
