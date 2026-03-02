@@ -421,4 +421,5 @@ FROM emp e
 INNER JOIN dept d
 ON e.dept_id = d.id;
 
-
+-- 20. Find employees with even salary
+SELECT * FROM emp WHERE salary % 2 = 0;
