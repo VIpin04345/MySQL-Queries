@@ -423,3 +423,9 @@ ON e.dept_id = d.id;
 
 -- 20. Find employees with even salary
 SELECT * FROM emp WHERE salary % 2 = 0;
+
+-- 28. Transaction example
+START TRANSACTION;
+UPDATE emp SET salary = salary + 5000 WHERE id = 1;
+ROLLBACK;
+
