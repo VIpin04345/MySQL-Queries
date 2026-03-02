@@ -413,3 +413,12 @@ FROM emp
 GROUP BY name
 HAVING COUNT(*) > 1;
 
+
+-- 🔗 JOIN BASED SQL PROBLEMS (Most Asked)
+16. Fetch employee name with department name
+SELECT e.name, d.dept_name
+FROM emp e
+INNER JOIN dept d
+ON e.dept_id = d.id;
+
+
