@@ -390,3 +390,7 @@ SELECT *
 FROM emp
 ORDER BY salary DESC
 LIMIT 5;
+
+
+-- 6. Find the highest salary
+SELECT MAX(salary) FROM emp;
