@@ -406,3 +406,10 @@ SELECT dept_id, SUM(salary)
 FROM emp
 GROUP BY dept_id;
 
+
+-- 11. Find duplicate employee names
+SELECT name, COUNT(*)
+FROM emp
+GROUP BY name
+HAVING COUNT(*) > 1;
+
