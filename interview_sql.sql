@@ -400,3 +400,9 @@ SELECT MAX(salary) FROM emp;
 SELECT *
 FROM emp
 WHERE salary = (SELECT MAX(salary) FROM emp);
+
+-- 9. Find total salary department-wise
+SELECT dept_id, SUM(salary)
+FROM emp
+GROUP BY dept_id;
+
