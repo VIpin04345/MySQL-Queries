@@ -635,7 +635,13 @@ SET salary = 35000
 WHERE emp_id = 5;
 DELETE FROM employees
 WHERE emp_id = 8;
+-- -- LEFT EXCLUUSIVE JOINS-------
 
+SELECT *
+FROM students as a
+LEFT JOIN course as b
+ON a.student_id=b.course_id
+WHERE b.course_id IS NULL;
 
 
 
