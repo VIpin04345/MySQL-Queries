@@ -194,6 +194,11 @@ UPDATE student
 SET marks=marks-1
 WHERE marks;
 
+
+UPDATE student
+SET grade='A'
+WHERE grade='C';
+
 UPDATE student
 SET marks=12
 WHERE marks=82;
