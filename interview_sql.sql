@@ -432,3 +432,7 @@ ROLLBACK;
 
 
 SELECT * FROM emp WHERE salary IS NULL;
+
+
+-- 6. Find the highest salary
+SELECT MAX(salary) FROM emp;
