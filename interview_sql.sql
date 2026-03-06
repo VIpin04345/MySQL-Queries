@@ -429,3 +429,6 @@ START TRANSACTION;
 UPDATE emp SET salary = salary + 5000 WHERE id = 1;
 ROLLBACK;
 
+
+
+SELECT * FROM emp WHERE salary IS NULL;
