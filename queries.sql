@@ -644,7 +644,5 @@ ON a.student_id=b.course_id
 WHERE b.course_id IS NULL;
 
 
-
-
-
 SELECT * FROM employees
+WHERE department = 'IT';
