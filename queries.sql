@@ -647,5 +647,5 @@ WHERE b.course_id IS NULL;
 
 
 
-
+SELECT * FROM employees
 
