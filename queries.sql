@@ -646,3 +646,7 @@ WHERE b.course_id IS NULL;
 
 SELECT * FROM employees
 WHERE department = 'IT';
+
+
+SELECT DISTINCT department FROM employees;
+SELECT * FROM employees
