@@ -16,6 +16,7 @@ This project contains MySQL programs and queries designed to demonstrate databas
 
 ---
 
+
 ## 🛠️ Tech Stack
 
 - MySQL  
