@@ -63,7 +63,6 @@ DELETE FROM students WHERE id = 5;
 
 
 # 🙋‍♂️Author
-
 Vipin Yadav
 
 GitHub: https://github.com/VIpin04345
