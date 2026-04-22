@@ -289,6 +289,12 @@ FROM employees
 WHERE salary > 30000
 GROUP BY dept_id;
 
+
+SELECT dept_id, COUNT(*)
+FROM employees
+WHERE salary > 30000
+GROUP BY dept_id;
+
 -- -- HAVING works after GROUP BY
 SELECT dept_id, COUNT(*)
 FROM employees
