@@ -61,6 +61,11 @@ FROM emp
 ORDER BY salary DESC
 LIMIT 5;
 
+SELECT *
+FROM emp
+ORDER BY salary DESC
+LIMIT 5;
+
 -- 🔗 JOIN BASED SQL PROBLEMS (Most Asked)
 16. Fetch employee name with department name
 SELECT e.name, d.dept_name
