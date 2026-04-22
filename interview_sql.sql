@@ -160,6 +160,11 @@ BEGIN
  SELECT * FROM emp;
 END;
 
+CREATE PROCEDURE getEmployees()
+BEGIN
+ SELECT * FROM emp;
+END;
+
 -- 30. Trigger example
 CREATE TRIGGER before_emp_insert
 BEFORE INSERT ON emp
