@@ -75,6 +75,12 @@ LEFT JOIN dept d
 ON e.dept_id = d.id
 WHERE d.id IS NULL;
 
+SELECT e.*
+FROM emp e
+LEFT JOIN dept d
+ON e.dept_id = d.id
+WHERE d.id IS NULL;
+
 -- 18. Find departments with no employees
 SELECT d.*
 FROM dept d
