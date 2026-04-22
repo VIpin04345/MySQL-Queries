@@ -380,6 +380,13 @@ ON e.DepartmentId = d.Id
 WHERE d.Id IS NULL;
 
 
+
+SELECT e.*
+FROM Employee e
+LEFT JOIN Department d 
+ON e.DepartmentId = d.Id
+WHERE d.Id IS NULL;
+
 CREATE TABLE students (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(50),
