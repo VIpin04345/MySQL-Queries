@@ -117,6 +117,14 @@ CASE
 END AS salary_level
 FROM emp;
 
+
+SELECT name,
+CASE
+ WHEN salary >= 50000 THEN 'High'
+ ELSE 'Low'
+END AS salary_level
+FROM emp;
+
 -- 23. Fetch the latest inserted record
 SELECT *
 FROM emp
