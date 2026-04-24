@@ -22,6 +22,8 @@ SHOW DATABASES;
 
 CREATE DATABASE college;
 USE college;
+CREATE DATABASE college;
+USE college;
 
 -- Creating our first table.
 
