@@ -67,6 +67,10 @@ SELECT * FROM emp;
 SELECT name FROM emp;
 SELECT salary FROM emp;
 
+SELECT * FROM emp;
+SELECT name FROM emp;
+SELECT salary FROM emp;
+
 
 
 CREATE DATABASE IF NOT EXISTS collage;
