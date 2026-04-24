@@ -277,6 +277,9 @@ WHERE marks<80;
 ALTER TABLE student
 DROP COLUMN grade;
 
+ALTER TABLE student
+DROP COLUMN grade;
+
 
 -- -- JOINS IN SQL---------------
 
