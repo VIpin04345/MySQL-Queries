@@ -14,6 +14,10 @@ VALUES
 
 SELECT * FROM students;
 
+SELECT name, marks
+FROM students
+WHERE marks > 80;
+
 -- 1. Display all records from a table
 SELECT * FROM emp;
 
