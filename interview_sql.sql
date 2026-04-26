@@ -20,6 +20,8 @@ WHERE marks > 80;
 UPDATE students
 SET marks = 88
 WHERE id = 2;
+DELETE FROM students
+WHERE id = 1;
 
 -- 1. Display all records from a table
 SELECT * FROM emp;
