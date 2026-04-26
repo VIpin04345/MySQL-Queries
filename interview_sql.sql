@@ -17,6 +17,9 @@ SELECT * FROM students;
 SELECT name, marks
 FROM students
 WHERE marks > 80;
+UPDATE students
+SET marks = 88
+WHERE id = 2;
 
 -- 1. Display all records from a table
 SELECT * FROM emp;
