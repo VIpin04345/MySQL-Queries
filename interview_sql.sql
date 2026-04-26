@@ -6,7 +6,11 @@ CREATE TABLE students (
     age INT,
     marks INT
 );
-
+INSERT INTO students (id, name, age, marks)
+VALUES
+(1, 'Rahul', 20, 85),
+(2, 'Aman', 21, 78),
+(3, 'Priya', 19, 92);
 
 
 -- 1. Display all records from a table
