@@ -1,3 +1,9 @@
+CREATE DATABASE college_db;
+
+
+
+
+
 -- 1. Display all records from a table
 SELECT * FROM emp;
 
