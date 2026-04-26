@@ -12,6 +12,7 @@ VALUES
 (2, 'Aman', 21, 78),
 (3, 'Priya', 19, 92);
 
+SELECT * FROM students;
 
 -- 1. Display all records from a table
 SELECT * FROM emp;
