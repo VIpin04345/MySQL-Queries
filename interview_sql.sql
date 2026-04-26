@@ -1,6 +1,11 @@
 CREATE DATABASE college_db;
 USE college_db;
-
+CREATE TABLE students (
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    age INT,
+    marks INT
+);
 
 
 
