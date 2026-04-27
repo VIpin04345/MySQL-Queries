@@ -536,6 +536,9 @@ WHERE marks>90;
 
 DROP VIEW view1;
 
+
+DROP VIEW view1;
+
 -- -- STORED PROCEDURE----------
 
 DROP PROCEDURE IF EXISTS p_name
