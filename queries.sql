@@ -531,6 +531,9 @@ FROM studentss;
 SELECT * FROM view1 
 WHERE marks>90;
 
+SELECT * FROM view1 
+WHERE marks>90;
+
 DROP VIEW view1;
 
 -- -- STORED PROCEDURE----------
