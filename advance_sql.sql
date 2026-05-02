@@ -7,3 +7,8 @@ id INT PRIMARY KEY,
 name VARCHAR(50),
 age INT NOT NULL
 );
+
+
+INSERT INTO student VALUES(
+101,"SHUBHAM YADAV",21
+);
