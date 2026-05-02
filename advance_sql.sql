@@ -12,3 +12,8 @@ age INT NOT NULL
 INSERT INTO student VALUES(
 101,"SHUBHAM YADAV",21
 );
+
+
+INSERT INTO student VALUES(
+102,"kishan yadav",17
+);
