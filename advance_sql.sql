@@ -17,3 +17,5 @@ INSERT INTO student VALUES(
 INSERT INTO student VALUES(
 102,"kishan yadav",17
 );
+
+SELECT * FROM student;
