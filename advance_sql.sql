@@ -33,3 +33,10 @@ CREATE TABLE student(
 rollno INT PRIMARY KEY,
 name VARCHAR(50)
 );
+
+
+INSERT INTO student(rollno,name)
+VALUES
+(101,'SHUBHAM YADAV'),
+(102,'KISHAN YADAV');
+INSERT INTO student VALUES (103,'RAM');
