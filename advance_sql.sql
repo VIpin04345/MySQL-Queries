@@ -61,3 +61,9 @@ VALUES
 SELECT * FROM employee_info;
 SELECT name FROM employee_info;
 SELECT salary, name FROM employee_info;
+
+CREATE TABLE temp1(
+id INT UNIQUE
+);
+INSERT INTO temp1 VALUES(101);
+INSERT INTO temp1 VALUES(101);
