@@ -51,3 +51,9 @@ id INT PRIMARY KEY,
 name VARCHAR(50),
 salary INT NOT NULL
 );
+
+INSERT INTO employee_info(id , name , salary)
+VALUES
+(1,'ADAM',25000),
+(2,'BOB',30000),
+(3,'CASEY',40000);
