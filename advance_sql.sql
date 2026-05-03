@@ -57,3 +57,7 @@ VALUES
 (1,'ADAM',25000),
 (2,'BOB',30000),
 (3,'CASEY',40000);
+
+SELECT * FROM employee_info;
+SELECT name FROM employee_info;
+SELECT salary, name FROM employee_info;
