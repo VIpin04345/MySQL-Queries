@@ -99,3 +99,6 @@ SELECT * FROM student WHERE city='MUMBAI';
 
 SELECT* FROM student WHERE marks>80 AND city='MUMBAI';
 SELECT* FROM student WHERE marks>80 OR city='MUMBAI';
+
+SELECT * FROM student WHERE marks BETWEEN 80  and 90;
+SELECT * FROM student WHERE city IN ("DELHI","MUMBAI",'GURGAON');
