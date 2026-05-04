@@ -106,3 +106,6 @@ SELECT * FROM student WHERE city IN ("DELHI","MUMBAI",'GURGAON');
 
 SELECT * FROM student WHERE city NOT IN ("DELHI","MUMBAI");
 SELECT * FROM student WHERE marks>75 LIMIT 3;
+
+SELECT * FROM student ORDER BY marks ASC;
+SELECT * FROM student ORDER BY city DESC;
