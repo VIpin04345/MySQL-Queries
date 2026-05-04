@@ -111,3 +111,5 @@ SELECT * FROM student ORDER BY marks ASC;
 SELECT * FROM student ORDER BY city DESC;
 
 SELECT * FROM student ORDER BY marks DESC LIMIT 3;
+
+SELECT MAX(marks) FROM student;
