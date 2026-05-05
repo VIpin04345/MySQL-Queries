@@ -118,3 +118,5 @@ SELECT AVG(marks) FROM student;
 SELECT COUNT(name) FROM student;
 SELECT SUM(marks) FROM student;
 
+SELECT COUNT(name),city,name FROM student
+GROUP BY city,name ;
