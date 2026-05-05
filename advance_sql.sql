@@ -114,3 +114,5 @@ SELECT * FROM student ORDER BY marks DESC LIMIT 3;
 
 SELECT MAX(marks) FROM student;
 SELECT MIN(marks) FROM student;
+SELECT AVG(marks) FROM student;
+
