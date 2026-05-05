@@ -122,3 +122,5 @@ SELECT COUNT(name),city,name FROM student
 GROUP BY city,name ;
 SELECT AVG(marks),city FROM student
 GROUP BY city ;
+SELECT AVG(marks),city FROM student 
+GROUP BY city ORDER BY city ASC;
