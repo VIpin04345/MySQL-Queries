@@ -124,3 +124,5 @@ SELECT AVG(marks),city FROM student
 GROUP BY city ;
 SELECT AVG(marks),city FROM student 
 GROUP BY city ORDER BY city ASC;
+SELECT COUNT(customer), mode FROM payment 
+GROUP BY mode;
