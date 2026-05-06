@@ -146,3 +146,7 @@ WHERE grade='A';
 UPDATE student
 SET grade='B'
 where marks BETWEEN 80 AND 90;
+
+UPDATE student 
+SET marks=marks+1;
+SELECT * FROM student;
