@@ -138,7 +138,11 @@ WHERE grade='A'
 GROUP BY city
 HAVING MAX(marks)>93
 ORDER BY city ASC;
+
 UPDATE student
 SET grade='O'
 WHERE grade='A';
 
+UPDATE student
+SET grade='B'
+where marks BETWEEN 80 AND 90;
