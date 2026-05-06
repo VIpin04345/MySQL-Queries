@@ -150,3 +150,7 @@ where marks BETWEEN 80 AND 90;
 UPDATE student 
 SET marks=marks+1;
 SELECT * FROM student;
+
+-- DELETE  ROWS AND DATA----
+DELETE FROM student
+WHERE marks<=15;
