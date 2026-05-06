@@ -154,3 +154,9 @@ SELECT * FROM student;
 -- DELETE  ROWS AND DATA----
 DELETE FROM student
 WHERE marks<=15;
+
+
+CREATE TABLE dept(
+id INT PRIMARY KEY,
+name VARCHAR(50)
+); 
