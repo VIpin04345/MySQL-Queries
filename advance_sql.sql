@@ -128,3 +128,8 @@ SELECT COUNT(customer), mode FROM payment
 GROUP BY mode;
 SELECT COUNT(name),grade FROM student
 GROUP BY grade ORDER BY grade;
+
+SELECT COUNT(name),city
+FROM student
+GROUP BY city 
+HAVING max(marks)>90;
