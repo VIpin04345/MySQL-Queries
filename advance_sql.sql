@@ -198,6 +198,12 @@ ADD COLUMN salary INT DEFAULT 25000;
 
 ALTER TABLE student
 DROP COLUMN salary;
+
+
+ALTER TABLE student
+DROP COLUMN salary;
+
+
 ALTER TABLE student01 
 RENAME TO student;
 
