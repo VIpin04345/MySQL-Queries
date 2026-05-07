@@ -201,4 +201,4 @@ ALTER TABLE student
 DROP COLUMN salary;
 git config --global user.name "user name"
 
-
+git config --global user.name "user name"
