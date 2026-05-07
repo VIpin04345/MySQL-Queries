@@ -188,3 +188,8 @@ VALUES
 (4,'DIPESH',103);
 DROP TABLE teacher;
 SELECT * FROM teacher;
+
+
+-- TABLE RELATED QUIRES-----
+SELECT * FROM student;
+
