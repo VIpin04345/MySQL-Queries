@@ -179,3 +179,12 @@ FOREIGN KEY (dept_id) REFERENCES dept(id)
 ON DELETE CASCADE
 ON UPDATE CASCADE
 );
+
+INSERT INTO teacher(id,name,dept_id)
+VALUES
+(1,'ANIL',101),
+(2,'AKASH',102),
+(3,'DILIP',103),
+(4,'DIPESH',103);
+DROP TABLE teacher;
+SELECT * FROM teacher;
