@@ -196,9 +196,6 @@ SELECT * FROM student;
 ALTER TABLE student
 ADD COLUMN salary INT DEFAULT 25000;
 
-ALTER TABLE student
-DROP COLUMN salary;
-
 
 ALTER TABLE student
 DROP COLUMN salary;
