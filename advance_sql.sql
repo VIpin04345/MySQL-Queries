@@ -189,6 +189,10 @@ CREATE TABLE dept(
 id INT PRIMARY KEY,
 name VARCHAR(50)
 ); 
+CREATE TABLE dept(
+id INT PRIMARY KEY,
+name VARCHAR(50)
+); 
 
 INSERT INTO dept(id,name)
 VALUES
