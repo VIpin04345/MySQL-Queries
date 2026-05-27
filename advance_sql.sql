@@ -1,6 +1,9 @@
 CREATE DATABASE collage;
 USE collage;
 
+CREATE DATABASE collage;
+USE collage;
+
 
 CREATE TABLE student(
 id INT PRIMARY KEY,
