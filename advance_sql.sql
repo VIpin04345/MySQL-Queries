@@ -49,6 +49,11 @@ rollno INT PRIMARY KEY,
 name VARCHAR(50)
 );
 
+CREATE TABLE student(
+rollno INT PRIMARY KEY,
+name VARCHAR(50)
+);
+
 
 INSERT INTO student(rollno,name)
 VALUES
