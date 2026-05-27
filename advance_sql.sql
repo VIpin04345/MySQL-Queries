@@ -122,6 +122,11 @@ SELECT * FROM student;
 SELECT city FROM STUDENT;
 SELECT DISTINCT city FROM student;
 
+
+SELECT * FROM student;
+SELECT city FROM STUDENT;
+SELECT DISTINCT city FROM student;
+
 SELECT * FROM student WHERE marks>80;
 SELECT * FROM student WHERE city='MUMBAI';
 
