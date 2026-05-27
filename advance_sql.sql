@@ -109,6 +109,15 @@ VALUES
 (105,'EMANUEL',12,'F','DELHI'),
 (106,'FARAH',82,'B','DELHI');
 
+INSERT INTO student (rollno, name, marks,grade,city)
+VALUES
+(101,'ANIL',78,'C','PUNE'),
+(102,'BHUMIKA',93,'A','MUMBAI'),
+(103,'CHETAN',85,'B','MUMBAI'),
+(104,'DHRUV',96,'A','DELHI'),
+(105,'EMANUEL',12,'F','DELHI'),
+(106,'FARAH',82,'B','DELHI');
+
 SELECT * FROM student;
 SELECT city FROM STUDENT;
 SELECT DISTINCT city FROM student;
