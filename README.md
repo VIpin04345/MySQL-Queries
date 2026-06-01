@@ -8,11 +8,11 @@ This project contains MySQL programs and queries designed to demonstrate databas
 
 ## 🚀 Features
 
-- Database design using MySQL  
-- Well-structured tables  
-- CRUD operations (Create, Read, Update, Delete)  
-- Use of joins, constraints, and indexes  
-- Beginner-friendly SQL queries  
+- Database design using MySQL  .
+- Well-structured tables  .
+- CRUD operations (Create, Read, Update, Delete)  .
+- Use of joins, constraints, and indexes  .
+- Beginner-friendly SQL queries  .
 
 ---
 
