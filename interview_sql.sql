@@ -118,6 +118,12 @@ LEFT JOIN emp e
 ON d.id = e.dept_id
 WHERE e.id IS NULL;
 
+SELECT d.*
+FROM dept d
+LEFT JOIN emp e
+ON d.id = e.dept_id
+WHERE e.id IS NULL;
+
 -- 🚀 ADVANCED SQL PROBLEMS
 -- 19. Find the third highest salary
 SELECT DISTINCT salary
