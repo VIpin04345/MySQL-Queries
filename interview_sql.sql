@@ -23,6 +23,10 @@ WHERE id = 2;
 DELETE FROM students
 WHERE id = 1;
 
+
+
+SELECT name, marks
+FROM students
 -- 1. Display all records from a table
 SELECT * FROM emp;
 
