@@ -1,251 +1,251 @@
-CREATE DATABASE collage;
-USE collage;
+-- CREATE DATABASE collage;
+-- USE collage;
 
-CREATE DATABASE collage;
-USE collage;
-
-
-CREATE TABLE student(
-id INT PRIMARY KEY,
-name VARCHAR(50),
-age INT NOT NULL
-);
-
-CREATE TABLE student(
-id INT PRIMARY KEY,
-name VARCHAR(50),
-age INT NOT NULL
-);
+-- CREATE DATABASE collage;
+-- USE collage;
 
 
-INSERT INTO student VALUES(
-101,"SHUBHAM YADAV",21
-);
+-- CREATE TABLE student(
+-- id INT PRIMARY KEY,
+-- name VARCHAR(50),
+-- age INT NOT NULL
+-- );
+
+-- CREATE TABLE student(
+-- id INT PRIMARY KEY,
+-- name VARCHAR(50),
+-- age INT NOT NULL
+-- );
 
 
-INSERT INTO student VALUES(
-102,"kishan yadav",17
-);
-
-SELECT * FROM student;
-
-CREATE DATABASE IF NOT EXISTS collage;
-DROP DATABASE IF EXISTS COLLAGES;
-
-SHOW DATABASES;
-SHOW TABLES;
+-- INSERT INTO student VALUES(
+-- 101,"SHUBHAM YADAV",21
+-- );
 
 
-DROP TABLE student;
+-- INSERT INTO student VALUES(
+-- 102,"kishan yadav",17
+-- );
 
-CREATE TABLE student(
-rollno INT PRIMARY KEY,
-name VARCHAR(50)
-);
+-- SELECT * FROM student;
 
+-- CREATE DATABASE IF NOT EXISTS collage;
+-- DROP DATABASE IF EXISTS COLLAGES;
 
-CREATE TABLE student(
-rollno INT PRIMARY KEY,
-name VARCHAR(50)
-);
-
-CREATE TABLE student(
-rollno INT PRIMARY KEY,
-name VARCHAR(50)
-);
+-- SHOW DATABASES;
+-- SHOW TABLES;
 
 
-INSERT INTO student(rollno,name)
-VALUES
-(101,'SHUBHAM YADAV'),
-(102,'KISHAN YADAV');
-INSERT INTO student VALUES (103,'RAM');
+-- DROP TABLE student;
+
+-- CREATE TABLE student(
+-- rollno INT PRIMARY KEY,
+-- name VARCHAR(50)
+-- );
 
 
-SELECT * FROM student;
+-- CREATE TABLE student(
+-- rollno INT PRIMARY KEY,
+-- name VARCHAR(50)
+-- );
 
-CREATE DATABASE IF NOT EXISTS XYZ_Comapny;
-USE XYZ_Comapny;
-CREATE TABLE employee_info(
-id INT PRIMARY KEY,
-name VARCHAR(50),
-salary INT NOT NULL
-);
-
-INSERT INTO employee_info(id , name , salary)
-VALUES
-(1,'ADAM',25000),
-(2,'BOB',30000),
-(3,'CASEY',40000);
-
-SELECT * FROM employee_info;
-SELECT name FROM employee_info;
-SELECT salary, name FROM employee_info;
-
-CREATE TABLE temp1(
-id INT UNIQUE
-);
-INSERT INTO temp1 VALUES(101);
-INSERT INTO temp1 VALUES(101);
+-- CREATE TABLE student(
+-- rollno INT PRIMARY KEY,
+-- name VARCHAR(50)
+-- );
 
 
-CREATE DATABASE IF NOT EXISTS collage1;
-USE collage1;
-CREATE TABLE student(
-rollno INT PRIMARY KEY,
-name VARCHAR(50),
-marks INT NOT NULL,
-grade VARCHAR(1),
-city VARCHAR(20)
-);
+-- INSERT INTO student(rollno,name)
+-- VALUES
+-- (101,'SHUBHAM YADAV'),
+-- (102,'KISHAN YADAV');
+-- INSERT INTO student VALUES (103,'RAM');
 
 
-INSERT INTO student (rollno, name, marks,grade,city)
-VALUES
-(101,'ANIL',78,'C','PUNE'),
-(102,'BHUMIKA',93,'A','MUMBAI'),
-(103,'CHETAN',85,'B','MUMBAI'),
-(104,'DHRUV',96,'A','DELHI'),
-(105,'EMANUEL',12,'F','DELHI'),
-(106,'FARAH',82,'B','DELHI');
+-- SELECT * FROM student;
 
-INSERT INTO student (rollno, name, marks,grade,city)
-VALUES
-(101,'ANIL',78,'C','PUNE'),
-(102,'BHUMIKA',93,'A','MUMBAI'),
-(103,'CHETAN',85,'B','MUMBAI'),
-(104,'DHRUV',96,'A','DELHI'),
-(105,'EMANUEL',12,'F','DELHI'),
-(106,'FARAH',82,'B','DELHI');
+-- CREATE DATABASE IF NOT EXISTS XYZ_Comapny;
+-- USE XYZ_Comapny;
+-- CREATE TABLE employee_info(
+-- id INT PRIMARY KEY,
+-- name VARCHAR(50),
+-- salary INT NOT NULL
+-- );
 
-SELECT * FROM student;
-SELECT city FROM STUDENT;
-SELECT DISTINCT city FROM student;
+-- INSERT INTO employee_info(id , name , salary)
+-- VALUES
+-- (1,'ADAM',25000),
+-- (2,'BOB',30000),
+-- (3,'CASEY',40000);
 
+-- SELECT * FROM employee_info;
+-- SELECT name FROM employee_info;
+-- SELECT salary, name FROM employee_info;
 
-SELECT * FROM student;
-SELECT city FROM STUDENT;
-SELECT DISTINCT city FROM student;
-
-SELECT * FROM student WHERE marks>80;
-SELECT * FROM student WHERE city='MUMBAI';
+-- CREATE TABLE temp1(
+-- id INT UNIQUE
+-- );
+-- INSERT INTO temp1 VALUES(101);
+-- INSERT INTO temp1 VALUES(101);
 
 
-SELECT* FROM student WHERE marks>80 AND city='MUMBAI';
-SELECT* FROM student WHERE marks>80 OR city='MUMBAI';
-
-SELECT * FROM student WHERE marks BETWEEN 80  and 90;
-SELECT * FROM student WHERE city IN ("DELHI","MUMBAI",'GURGAON');
-
-
-SELECT * FROM student WHERE city NOT IN ("DELHI","MUMBAI");
-SELECT * FROM student WHERE marks>75 LIMIT 3;
-
-SELECT * FROM student ORDER BY marks ASC;
-SELECT * FROM student ORDER BY city DESC;
-
-SELECT * FROM student ORDER BY marks DESC LIMIT 3;
-
-SELECT MAX(marks) FROM student;
-SELECT MIN(marks) FROM student;
-SELECT AVG(marks) FROM student;
-SELECT COUNT(name) FROM student;
-SELECT SUM(marks) FROM student;
-
-SELECT COUNT(name),city,name FROM student
-GROUP BY city,name ;
-SELECT AVG(marks),city FROM student
-GROUP BY city ;
-SELECT AVG(marks),city FROM student 
-GROUP BY city ORDER BY city ASC;
-SELECT COUNT(customer), mode FROM payment 
-GROUP BY mode;
-SELECT COUNT(name),grade FROM student
-GROUP BY grade ORDER BY grade;
-
-SELECT COUNT(name),city
-FROM student
-GROUP BY city 
-HAVING max(marks)>90;
-SELECT city, count(marks)  FROM student
-WHERE grade='A'
-GROUP BY city
-HAVING MAX(marks)>93
-ORDER BY city ASC;
-
-UPDATE student
-SET grade='O'
-WHERE grade='A';
-
-UPDATE student
-SET grade='B'
-where marks BETWEEN 80 AND 90;
-
-UPDATE student 
-SET marks=marks+1;
-SELECT * FROM student;
-
--- DELETE  ROWS AND DATA----
-DELETE FROM student
-WHERE marks<=15;
+-- CREATE DATABASE IF NOT EXISTS collage1;
+-- USE collage1;
+-- CREATE TABLE student(
+-- rollno INT PRIMARY KEY,
+-- name VARCHAR(50),
+-- marks INT NOT NULL,
+-- grade VARCHAR(1),
+-- city VARCHAR(20)
+-- );
 
 
-CREATE TABLE dept(
-id INT PRIMARY KEY,
-name VARCHAR(50)
-); 
-CREATE TABLE dept(
-id INT PRIMARY KEY,
-name VARCHAR(50)
-); 
+-- INSERT INTO student (rollno, name, marks,grade,city)
+-- VALUES
+-- (101,'ANIL',78,'C','PUNE'),
+-- (102,'BHUMIKA',93,'A','MUMBAI'),
+-- (103,'CHETAN',85,'B','MUMBAI'),
+-- (104,'DHRUV',96,'A','DELHI'),
+-- (105,'EMANUEL',12,'F','DELHI'),
+-- (106,'FARAH',82,'B','DELHI');
 
-INSERT INTO dept(id,name)
-VALUES
-(101,'ENGLISH'),
-(102,'COMPUTER'),
-(103,'SCIENCE');
-SELECT * FROM dept;
-UPDATE dept
-SET id=104
-WHERE id=103;
+-- INSERT INTO student (rollno, name, marks,grade,city)
+-- VALUES
+-- (101,'ANIL',78,'C','PUNE'),
+-- (102,'BHUMIKA',93,'A','MUMBAI'),
+-- (103,'CHETAN',85,'B','MUMBAI'),
+-- (104,'DHRUV',96,'A','DELHI'),
+-- (105,'EMANUEL',12,'F','DELHI'),
+-- (106,'FARAH',82,'B','DELHI');
 
-CREATE TABLE teacher(
-id INT PRIMARY KEY,
-name VARCHAR(50),
-dept_id INT NOT NULL,
-FOREIGN KEY (dept_id) REFERENCES dept(id)
-ON DELETE CASCADE
-ON UPDATE CASCADE
-);
-
-INSERT INTO teacher(id,name,dept_id)
-VALUES
-(1,'ANIL',101),
-(2,'AKASH',102),
-(3,'DILIP',103),
-(4,'DIPESH',103);
-DROP TABLE teacher;
-SELECT * FROM teacher;
-
-INSERT INTO teacher(id,name,dept_id)
-VALUES
-(1,'ANIL',101),
-(2,'AKASH',102),
-(3,'DILIP',103),
-(4,'DIPESH',103);
-DROP TABLE teacher;
-SELECT * FROM teacher;
+-- SELECT * FROM student;
+-- SELECT city FROM STUDENT;
+-- SELECT DISTINCT city FROM student;
 
 
--- TABLE RELATED QUIRES-----
-SELECT * FROM student;
+-- SELECT * FROM student;
+-- SELECT city FROM STUDENT;
+-- SELECT DISTINCT city FROM student;
 
-ALTER TABLE student
-ADD COLUMN salary INT DEFAULT 25000;
+-- SELECT * FROM student WHERE marks>80;
+-- SELECT * FROM student WHERE city='MUMBAI';
 
 
-ALTER TABLE student
-DROP COLUMN salary;
-git config --global user.name "user name"
+-- SELECT* FROM student WHERE marks>80 AND city='MUMBAI';
+-- SELECT* FROM student WHERE marks>80 OR city='MUMBAI';
 
-git config --global user.name "user name"
+-- SELECT * FROM student WHERE marks BETWEEN 80  and 90;
+-- SELECT * FROM student WHERE city IN ("DELHI","MUMBAI",'GURGAON');
+
+
+-- SELECT * FROM student WHERE city NOT IN ("DELHI","MUMBAI");
+-- SELECT * FROM student WHERE marks>75 LIMIT 3;
+
+-- SELECT * FROM student ORDER BY marks ASC;
+-- SELECT * FROM student ORDER BY city DESC;
+
+-- SELECT * FROM student ORDER BY marks DESC LIMIT 3;
+
+-- SELECT MAX(marks) FROM student;
+-- SELECT MIN(marks) FROM student;
+-- SELECT AVG(marks) FROM student;
+-- SELECT COUNT(name) FROM student;
+-- SELECT SUM(marks) FROM student;
+
+-- SELECT COUNT(name),city,name FROM student
+-- GROUP BY city,name ;
+-- SELECT AVG(marks),city FROM student
+-- GROUP BY city ;
+-- SELECT AVG(marks),city FROM student 
+-- GROUP BY city ORDER BY city ASC;
+-- SELECT COUNT(customer), mode FROM payment 
+-- GROUP BY mode;
+-- SELECT COUNT(name),grade FROM student
+-- GROUP BY grade ORDER BY grade;
+
+-- SELECT COUNT(name),city
+-- FROM student
+-- GROUP BY city 
+-- HAVING max(marks)>90;
+-- SELECT city, count(marks)  FROM student
+-- WHERE grade='A'
+-- GROUP BY city
+-- HAVING MAX(marks)>93
+-- ORDER BY city ASC;
+
+-- UPDATE student
+-- SET grade='O'
+-- WHERE grade='A';
+
+-- UPDATE student
+-- SET grade='B'
+-- where marks BETWEEN 80 AND 90;
+
+-- UPDATE student 
+-- SET marks=marks+1;
+-- SELECT * FROM student;
+
+-- -- DELETE  ROWS AND DATA----
+-- DELETE FROM student
+-- WHERE marks<=15;
+
+
+-- CREATE TABLE dept(
+-- id INT PRIMARY KEY,
+-- name VARCHAR(50)
+-- ); 
+-- CREATE TABLE dept(
+-- id INT PRIMARY KEY,
+-- name VARCHAR(50)
+-- ); 
+
+-- INSERT INTO dept(id,name)
+-- VALUES
+-- (101,'ENGLISH'),
+-- (102,'COMPUTER'),
+-- (103,'SCIENCE');
+-- SELECT * FROM dept;
+-- UPDATE dept
+-- SET id=104
+-- WHERE id=103;
+
+-- CREATE TABLE teacher(
+-- id INT PRIMARY KEY,
+-- name VARCHAR(50),
+-- dept_id INT NOT NULL,
+-- FOREIGN KEY (dept_id) REFERENCES dept(id)
+-- ON DELETE CASCADE
+-- ON UPDATE CASCADE
+-- );
+
+-- INSERT INTO teacher(id,name,dept_id)
+-- VALUES
+-- (1,'ANIL',101),
+-- (2,'AKASH',102),
+-- (3,'DILIP',103),
+-- (4,'DIPESH',103);
+-- DROP TABLE teacher;
+-- SELECT * FROM teacher;
+
+-- INSERT INTO teacher(id,name,dept_id)
+-- VALUES
+-- (1,'ANIL',101),
+-- (2,'AKASH',102),
+-- (3,'DILIP',103),
+-- (4,'DIPESH',103);
+-- DROP TABLE teacher;
+-- SELECT * FROM teacher;
+
+
+-- -- TABLE RELATED QUIRES-----
+-- SELECT * FROM student;
+
+-- ALTER TABLE student
+-- ADD COLUMN salary INT DEFAULT 25000;
+
+
+-- ALTER TABLE student
+-- DROP COLUMN salary;
+-- git config --global user.name "user name"
+
+-- git config --global user.name "user name"
